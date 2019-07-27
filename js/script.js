@@ -16,8 +16,8 @@ $(document).ready(function(){
     
     // tab 버튼 클릭 시 skip 메뉴 활성화
     
-    var tmlabel = $('#header .top_menu ul li a label');
-    var tminput = $('#header .top_menu ul li a .search');
+    var tmlabel = $('#header .top_menu ul li label');
+    var tminput = $('#header .top_menu ul li .search');
     
     tmlabel.click(function(){
         if(tminput.hasClass('on')){ 
@@ -26,7 +26,9 @@ $(document).ready(function(){
         }else{
             tminput.css({
                 "display":"inline-block",
-                "position":"inherit",
+                "position":"absolute",
+                "top":"7px",
+                "right":"30px"
             });
             tminput.animate({width : 150 , opacity : 1 }, 0);
             tminput.addClass('on');
