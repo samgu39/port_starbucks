@@ -79,14 +79,14 @@ h3 {font-family: 'Raleway', sans-serif;}
 #main .main_top .banner .main_slide {position: absolute; left:0; display: flex; width: 100%; height: 100%;}
 #main .main_top .banner .main_slide div {position: absolute; top:0; width:100%; height: 100%;}
 #main .main_top .banner .main_slide div > .wrap {position: relative; width: 100%; margin: 0 auto;}
-#main .main_top .banner .main_slide .slide01 {background:url(../../img/slide/slide01_bg.png) center center; background-size:cover; overflow: hidden; }
-#main .main_top .banner .main_slide .slide02 {background:url(../../img/slide/slide02_bg.png) center center; background-size:cover; overflow: hidden; }
-#main .main_top .banner .main_slide .slide03 {background:url(../../img/slide/slide03_bg.png) center center; background-size:cover; overflow: hidden; }
+#main .main_top .banner .main_slide .slide01 {background:url(../img/m_slide01_bg.png) center center; background-size:cover; overflow: hidden; }
+#main .main_top .banner .main_slide .slide02 {background:url(../img/m_slide02_bg.png) center center; background-size:cover; overflow: hidden; }
+#main .main_top .banner .main_slide .slide03 {background:url(../img/m_slide03_bg.png) center center; background-size:cover; overflow: hidden; }
 #main .main_top .banner .main_slide div h2 {display:inline-block; font-size: 1.2em; font-weight: bold; font-family: 'Noto Sans KR', sans-serif; margin-top:40px; padding: 10px; background: #fff; letter-spacing: -1px; z-index: 2;}
 #main .main_top .banner .main_slide .slide01 h2 {color: #035ee8;}
-#main .main_top .banner .main_slide .slide01 > div > div.img01 a {right: 265px; width: 150px; }
-#main .main_top .banner .main_slide .slide01 > div > div.img02 a {right: 135px; width: 150px; }
-#main .main_top .banner .main_slide .slide01 > div > div.img03 a {right: -10px; width: 150px; }
+#main .main_top .banner .main_slide .slide01 > div > div.img01 a {right: 225px; width: 150px; }
+#main .main_top .banner .main_slide .slide01 > div > div.img02 a {right: 95px; width: 150px; }
+#main .main_top .banner .main_slide .slide01 > div > div.img03 a {right: -25px; width: 150px; }
 #main .main_top .banner .main_slide .slide01 > div > div a {display: block; position: absolute; height: 100%; z-index: 1;}
 #main .main_top .banner .main_slide .slide01 > div > div.img01 a img {padding-top: 200px; width:100%;}
 #main .main_top .banner .main_slide .slide01 > div > div.img02 a img {padding-top: 120px; width:100%;}
@@ -200,7 +200,7 @@ font-weight: bold; color: #017143;}
 #main .main_middle .coffee_find .coffee_find_right .question > div h4 span {font-weight: bold;}
 #main .main_middle .coffee_find .coffee_find_right .question > div ul { margin:0 auto;}
 #main .main_middle .coffee_find .coffee_find_right .question > div ul.plus4 { width: 280px; padding-top: 40px;}
-#main .main_middle .coffee_find .coffee_find_right .question > div ul.plus3 {width: 470px; padding-top: 80px;}
+#main .main_middle .coffee_find .coffee_find_right .question > div ul.plus3 { width: calc(100% - 40px); padding-top: 80px; text-align: center; }
 #main .main_middle .coffee_find .coffee_find_right .question > div ul li {display: inline-flex; width: 100%; height: 100%; margin: 0 10px;}
 #main .main_middle .coffee_find .coffee_find_right .question > div ul.plus4 li {display: inline-flex; width: 130px; margin: 2px;}
 #main .main_middle .coffee_find .coffee_find_right .question > div ul.plus3 li {display: inline-flex; width: 130px; height: 130px; margin: 0;}
