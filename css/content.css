@@ -33,8 +33,8 @@ h3 {font-family: 'Raleway', sans-serif;}
 #header .top_menu {position: relative; width: 100%; height:35px; background:#ddd;}
 #header .top_menu ul {display: flex; position: absolute; right:0;}
 #header .top_menu ul li a {display: block; position: relative; padding:0 10px; font-size:0.9em; line-height: 35px; color: #555;}
-#header .top_menu ul li a .search {display: none; width:0; position: absolute; top:-2px; right:15px; border:1px solid #017143; border-radius: 10px; height: 10px; padding: 5px; transition: all .3s;}
-#header .top_menu ul li a label {display: inline-block; position: absolute; right: 4px; top: 5px; width:20px; height:20px; background:url(../img/search.png) no-repeat; font-size: 0; cursor: pointer;}
+#header .top_menu ul li .search {display: none; width:0; position: absolute; top:-2px; right:15px; border:1px solid #017143; border-radius: 10px; height: 20px; padding: 5px; font-size: 0.85em; transition: all .3s;}
+#header .top_menu ul li label {display: inline-block; position: relative; right: 4px; top: -8px; width:20px; height:20px; background:url(../img/search.png) no-repeat; font-size: 0; cursor: pointer;}
 #header .logo {user-select: none; height: 130px;}
 #header .logo a {display: inline-block; position: absolute; left: 50%; transform: translateX(-50%); margin-top:12px;}
 #header .logo a img {padding: 15px; transition: all .6s;}
@@ -244,12 +244,12 @@ a.bx-pager-link.active {background:#017143; width:40px; border-radius: 10px;}
 .content > div > div a {position: relative;font-family: 'Noto Sans KR', sans-serif; text-align: center; display: block; font-size: 1.2em; margin-top: 20px; padding: 13px; background: #017143; color: #fff; letter-spacing: -1px; border-radius: 3px; z-index: 1; overflow: hidden; transition: all .3s;}
 .content > div > div a:before {content: ''; display: block; width:100%; height:100%; position: absolute; top:0; background: #bdd7cc; border-radius: 3px; z-index: -1; transition: all .3s;}
 .content > div > div a:before {right:-100%;}
-.content > div > div .youtube {opacity: 0; position: absolute; top: 20px; transition: all 2s; }
-.content > div > div .youtube.active {opacity: 1;}
-.content > .sub01 > div .youtube, .content > .sub03 > div .youtube, .content > .sub05 > div .youtube { left: 10px;}
-.content > .sub02 > div .youtube, .content > .sub04 > div .youtube, .content > .sub06 > div .youtube { right: 10px;}
-.content > div > div .youtube iframe {width: 560px; height: 360px;}
-.content > .sub01 > div .youtube iframe {width: 500px; }
+.content > div > div .menu_youtube {opacity: 0; position: absolute; top: 20px; transition: all 2s; }
+.content > div > div .menu_youtube.active {opacity: 1;}
+.content > .sub01 > div .menu_youtube, .content > .sub03 > div .menu_youtube, .content > .sub05 > div .menu_youtube { left: 10px;}
+.content > .sub02 > div .menu_youtube, .content > .sub04 > div .menu_youtube, .content > .sub06 > div .menu_youtube { right: 10px;}
+.content > div > div .menu_youtube iframe {width: 560px; height: 360px;}
+.content > .sub01 > div .menu_youtube iframe {width: 500px; }
 .content > div > .sub02_box a:before, .content > div > .sub04_box a:before, .content > div > .sub06_box a:before, .content > div > .sub08_box a:before {left:-100%;}
 .content > div > div a:hover:before {right:0;}
 .content > div > .sub02_box a:hover:before, .content > div > .sub04_box a:hover:before, .content > div > .sub06_box a:hover:before, .content > div > .sub08_box a:hover:before {left:0;}
