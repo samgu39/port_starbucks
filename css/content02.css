@@ -30,25 +30,27 @@ h1, h2 {font-size: 0;}
 h3 {font-family: 'Raleway', sans-serif;}
 
 /* 상단 메뉴 */
-#header .top_menu {position: relative; width: 100%; height:35px; background:#ddd;}
+#header {width: 100%; position: absolute; top:0; z-index: 99;}
+#header .top_menu {position: relative; width: 100%; height:35px; }
 #header .top_menu ul {display: flex; position: absolute; right:0;}
-#header .top_menu ul li a {display: block; position: relative; padding:0 10px; font-size:0.9em; line-height: 35px; color: #555;}
+#header .top_menu ul li a {display: block; position: relative; padding:0 10px; font-size:0.9em; line-height: 35px; color: #fff;}
 #header .top_menu ul li .search {display: none; width:0; position: absolute; top:-2px; right:15px; border:1px solid #017143; border-radius: 10px; height: 20px; padding: 5px; font-size: 0.85em; transition: all .3s;}
 #header .top_menu ul li label {display: inline-block; position: relative; right: 4px; top: -8px; width:20px; height:20px; background:url(../img/search02.png) no-repeat; font-size: 0; cursor: pointer;}
 #header .logo {user-select: none; height: 130px;}
-#header .logo a {display: inline-block; position: absolute; left: 50%; transform: translateX(-50%); margin-top:12px;}
+#header .logo a {display: inline-block; position: absolute; left: 50%; transform: translateX(-50%);}
 #header .logo a img {padding: 15px; transition: all .6s;}
 #header .logo a:hover img {margin-right: 170px;}
-#header .logo a p {opacity: 0; position: absolute; left:0; top:50%; transform: translateY(-50%); font-size: 30px; font-weight: bold; letter-spacing: -1px; color:#017143; font-family: 'Raleway', sans-serif; transition: all .6s;}
-#header .logo a:hover p {opacity: 1; left:100px;}
-#header .nav {background: #017143;}
+#header .logo a i {opacity: 0; position: absolute; left:0; top:50%; transform: translateY(-50%); font-size: 30px; font-weight: bold; letter-spacing: -1px; color:#fff; font-family: 'Raleway', sans-serif; transition: all .6s;}
+#header .logo a:hover i {opacity: 1; left:100px;}
+#header .nav {background: #017143; box-shadow: 0px 0px 8px rgba(0,0,0,0.6);}
+#header .nav.on {position: fixed; top:0; width:100%;}
 #header .nav div > ul {display: flex; justify-content: space-around; text-align: center; position: relative;}
 #header .nav div > ul > li {width: 100%; white-space: nowrap;}
 #header .nav div > ul > li > a {display: block; position: relative; line-height: 40px; color:#fff; font-size: 0.95em; font-family: 'Raleway', sans-serif; transition: all .3s;}
 #header .nav div > ul > li:hover > a {background:#fff; color:#017143;}
 #header .nav div > ul > li > a:before {content: ''; display: block; position: absolute; bottom:0; left:50%; width:0; height: 1px; background:#017143; transform: translateX(-50%); transition: all .6s;}
 #header .nav div > ul > li:hover > a:before {width:100%;}
-#header .nav div > ul > li > .submenu {display: none; position: absolute; left:0; top:40px; width: 100%; background: #fff; box-shadow: 2px 4px 6px rgba(0,0,0,0.2); border-radius: 0 0 10px 10px; z-index: 6;}
+#header .nav div > ul > li > .submenu {display: none; position: absolute; left:0; top:40px; width: 100%; background: #fff; box-shadow: 2px 4px 6px rgba(0,0,0,0.2); border-radius: 0 0 10px 10px; z-index: 5;}
 #header .nav div > ul > li > .submenu > ul > li {position: inherit; flex: 3;}
 #header .nav div > ul > li > .submenu > ul > li > a {font-size:0.85em; color:#017143; font-weight: bold; white-space: nowrap; padding: 0; border-bottom: 1px solid #ddd; transition: all .3s;}
 #header .nav div > ul > li > .submenu > ul > li > a:before {display: none;}
@@ -64,22 +66,26 @@ h3 {font-family: 'Raleway', sans-serif;}
 #header .nav div > ul > li > .submenu .foot_menu > div em a:before {content: ''; display: block; position: absolute; left:18px; bottom: 3px; width:100%; height:20px; opacity: 0.4; background:#bdd7cc; z-index: -1;}
 #header .nav div > ul > li > .submenu .foot_menu > div p {text-indent: 30px; color: #ddd; font-size: 0.85em;}
 
+/* 메인 부분 */
+
 /* 메인 슬라이드 */
-#main .main_top .banner {position: relative; width: 100%; height: 450px; overflow: hidden;}
+#main .main_top .banner {position: relative; width: 100%; height: 100vh; overflow: hidden; margin-bottom: 50px;}
+#main .main_top .banner:before {content: ''; display: block; position: absolute; left:0; bottom:0; width:100%; background: url(../img/slide/slide_bottom.png) no-repeat; height: 250px; z-index: 1;}
+#main .main_top .banner .starbucks {color: #fff; font-family: 'Raleway', sans-serif; position: absolute; right: 20px; bottom: -10px; font-size: 4em; font-weight: bold; z-index: 10; }
 #main .main_top .banner .main_slide {position: absolute; left:0; display: flex; width: 100%; height: 100%;}
 #main .main_top .banner .main_slide div {position: absolute; left:0; top:0; width:100%; height: 100%;}
 #main .main_top .banner .main_slide div > .wrap {position: relative; width: 1200px; margin: 0 auto;}
 #main .main_top .banner .main_slide .slide01 {background:url(../img/slide/slide01_bg.png) center center; background-size:cover; overflow: hidden; }
 #main .main_top .banner .main_slide .slide02 {background:url(../img/slide/slide02_bg.png) center center; background-size:cover; overflow: hidden; }
 #main .main_top .banner .main_slide .slide03 {background:url(../img/slide/slide03_bg.png) center center; background-size:cover; overflow: hidden; }
-#main .main_top .banner .main_slide div h2 {display:inline-block; font-size: 1.8em; font-weight: bold; font-family: 'Noto Sans KR', sans-serif; margin-top:40px; padding: 10px; background: #fff; letter-spacing: -1px; z-index: 2;}
-#main .main_top .banner .main_slide div em {display: block; width:600px; margin:20px 0 0 40px; padding: 10px; font-size:1.2em; font-family: 'Noto Sans KR', sans-serif; font-weight: bold; border-bottom: 2px solid #fff; z-index: 2;}
+#main .main_top .banner .main_slide div h2 {display:inline-block; position: absolute; top: 30%; font-size: 2em; font-weight: bold; font-family: 'Noto Sans KR', sans-serif; padding: 10px; background: #fff; letter-spacing: -1px; z-index: 2; border-radius: 10px;}
+#main .main_top .banner .main_slide div em {display: block; width:600px; position: absolute; top: 40%; padding: 10px; font-size:1.2em; font-family: 'Noto Sans KR', sans-serif; font-weight: bold; border-bottom: 2px solid #fff; z-index: 2; letter-spacing: -1px;}
 #main .main_top .banner .main_slide .slide01 h2 {color: #035ee8;}
 #main .main_top .banner .main_slide .slide01 em {color:#2742a9;}
-#main .main_top .banner .main_slide .slide01 > div > div.img01 a {right: 400px; width: 240px; }
-#main .main_top .banner .main_slide .slide01 > div > div.img02 a {right: 120px; width: 300px; }
-#main .main_top .banner .main_slide .slide01 > div > div.img03 a {right: -100px; width: 300px; }
-#main .main_top .banner .main_slide .slide01 > div > div a {display: block; position: absolute; height: 100%; z-index: 1;}
+#main .main_top .banner .main_slide .slide01 > div > div.img01 a {right: 400px; bottom:10%; width: 240px; }
+#main .main_top .banner .main_slide .slide01 > div > div.img02 a {right: 120px; bottom:10%; width: 300px; }
+#main .main_top .banner .main_slide .slide01 > div > div.img03 a {right: -100px; bottom:10%; width: 300px; }
+#main .main_top .banner .main_slide .slide01 > div > div a {display: block; position: absolute;  z-index: 1;}
 #main .main_top .banner .main_slide .slide01 > div > div.img01 a img {padding-top: 100px;}
 #main .main_top .banner .main_slide .slide01 > div > div.img02 a img {padding-top: 20px;}
 #main .main_top .banner .main_slide .slide01 > div > div.img03 a img {padding-top: 20px;}
@@ -89,31 +95,31 @@ h3 {font-family: 'Raleway', sans-serif;}
     50% {transform: translateY(20px);}
     100% {transform: translateY(0);}
 }
-#main .main_top .banner .main_slide .slide01 > div > div a p {position: absolute; right: 0; bottom:150px; color:#fff; padding:8px; background:#035ee8; border-radius: 20px; font-weight: bold;}
+#main .main_top .banner .main_slide .slide01 > div > div a p {position: absolute; right: 0; bottom:150px; color:#fff; padding:10px; background:#035ee8; border-radius: 20px; font-family: 'Noto Sans KR', sans-serif; letter-spacing: -1px;}
 #main .main_top .banner .main_slide .slide01 > div > div.img02 a p {right: 50px;}
-#main .main_top .banner .main_slide .slide01 > div > .water {top:75px; left:460px; width: 800px; height: 450px; background:url(../img/slide/slide01_water.png) no-repeat right bottom; z-index: 0; animation: water 3s ease-in-out;}
+#main .main_top .banner .main_slide .slide01 > div > .water {top:50%; left:460px; width: 800px; height: 450px; background:url(../img/slide/slide01_water.png) no-repeat right bottom; z-index: 0; animation: water 3s ease-in-out;}
 @keyframes water {
-    0% {top:75px; opacity: 1;}
-    50% {top:200px; opacity: 0.5;}
-    100% {top:75px; opacity: 1;}
+    0% {top:50%; opacity: 1;}
+    50% {top:40%; opacity: 0.5;}
+    100% {top:50%; opacity: 1;}
 }
 #main .main_top .banner .main_slide .slide02 h2 {color:#ff7f50;}
 #main .main_top .banner .main_slide .slide02 em {color:#ff3300;}
-#main .main_top .banner .main_slide .slide02 > div > a {position: absolute; width: 240px; height: 450px; right: 20px; top:0;}
+#main .main_top .banner .main_slide .slide02 > div > a {position: absolute; width: 240px; height: 450px; right: 20px; bottom: 10%;}
 #main .main_top .banner .main_slide .slide02 > div > a img { padding-top:10px;}
 #main .main_top .banner .main_slide .slide02 > div > div {position: absolute;}
-#main .main_top .banner .main_slide .slide02 > div > .remon { width: 700px; height: 397px; background: url(../img/slide/remon.png) no-repeat; left: 82%; top: 150px; transform: rotate(-20deg); z-index: 2; animation: width 3s infinite;}
-#main .main_top .banner .main_slide .slide02 > div > .flower { width: 376px; height: 410px; background: url(../img/slide/flower.png) no-repeat; left: 100%; top: 0; transform-origin: bottom right; z-index: 1; animation: rotate 4s ease-in-out infinite;}
+#main .main_top .banner .main_slide .slide02 > div > .remon { width: 700px; height: 397px; background: url(../img/slide/remon.png) no-repeat; left: 82%; top: 70%; transform: rotate(-20deg); z-index: 2; animation: width 3s infinite;}
+#main .main_top .banner .main_slide .slide02 > div > .flower { width: 376px; height: 410px; background: url(../img/slide/flower.png) no-repeat; left: 90%; top: 60%; transform-origin: bottom right; z-index: 1; animation: rotate 4s ease-in-out infinite;}
 @keyframes rotate {
     0% {transform: rotate(0deg);}
     50% {transform: rotate(45deg);}
     100% {transform: rotate(0deg);}
 }
-#main .main_top .banner .main_slide .slide02 > div > .fruit { width: 650px; height: 432px; background: url(../img/slide/fruit.png) no-repeat; left: -40%; top: 160px; transform: rotate(15deg); animation: width 3s infinite;}
+#main .main_top .banner .main_slide .slide02 > div > .fruit { width: 650px; height: 432px; background: url(../img/slide/fruit.png) no-repeat; left: -30%; top: 50%; transform: rotate(15deg); animation: width 3s infinite;}
 @keyframes width {
-    0% {transform: scale(0.9,0.9);}
-    50% {transform: scale(1,1);}
-    100% {transform: scale(0.9,0.9);}
+    0% {transform: rotate(15deg) scale(0.9,0.9);}
+    50% {transform: rotate(15deg) scale(1,1);}
+    100% {transform: rotate(15deg) scale(0.9,0.9);}
 }
 #main .main_top .banner .main_slide .slide02 > div > a img {animation: juice 3s infinite;}
 @keyframes juice {
@@ -124,16 +130,16 @@ h3 {font-family: 'Raleway', sans-serif;}
 }
 #main .main_top .banner .main_slide .slide03 h2 {color:#006633;}
 #main .main_top .banner .main_slide .slide03 em {color:#fff;}
-#main .main_top .banner .main_slide .slide03 > div > a {position: absolute; left:50%; top:0; width: 400px; height: 491px; z-index: 1;}
+#main .main_top .banner .main_slide .slide03 > div > a {position: absolute; left:60%; bottom: 10%; width: 400px; height: 491px; z-index: 1;}
 #main .main_top .banner .main_slide .slide03 > div > a img { padding-top:20px; z-index: 1;}
-#main .main_top .banner .main_slide .slide03 > div > .avocado01 {position: absolute; width: 250px; height: 314px; background: url(../img/slide/avocado_01.png) no-repeat; left: -19%; top: -60px;}
-#main .main_top .banner .main_slide .slide03 > div > .avocado02 {position: absolute; width: 250px; height: 339px; background: url(../img/slide/avocado_02.png) no-repeat; left: 100%; top: 200px; transform: rotate(-20deg);}
+#main .main_top .banner .main_slide .slide03 > div > .avocado01 {position: absolute; width: 250px; height: 314px; background: url(../img/slide/avocado_01.png) no-repeat; left: -25%; top: -5%;}
+#main .main_top .banner .main_slide .slide03 > div > .avocado02 {position: absolute; width: 250px; height: 339px; background: url(../img/slide/avocado_02.png) no-repeat; left: 100%; top: 70%; transform: rotate(-20deg);}
 
 /* 메인 슬라이드 부품 */
-.bx-viewport {height: 450px;}
+.bx-viewport {height: 100vh;}
 .bx-controls-direction a.bx-prev {position: absolute; left:20px; top:50%; transform: translateY(-50%) rotate(-180deg); background: url(../img/slide_btn.png) no-repeat; font-size:0; width:50px; height:50px;}
 .bx-controls-direction a.bx-next {position: absolute; right:20px; top:50%; transform: translateY(-50%); background: url(../img/slide_btn.png) no-repeat; font-size:0; width:50px; height:50px;}
-.bx-controls-auto {position: absolute; bottom:10px; right:20px; display: flex; z-index: 99;}
+.bx-controls-auto {position: absolute; bottom:10px; left:10px; display: flex; z-index: 99;}
 .bx-controls-auto .bx-controls-auto-item .bx-start {display: block; width:20px; height:20px; font-size:0; background:url(../img/slide/play.png) no-repeat;}
 .bx-controls-auto .bx-controls-auto-item .bx-stop {display: block; width:20px; height:20px; font-size:0; background:url(../img/slide/stop.png) no-repeat;}
 .bx-pager.bx-default-pager {display: block; position: absolute; bottom:10px; left:50%; transform: translateX(-50%); display: flex; z-index: 4;}

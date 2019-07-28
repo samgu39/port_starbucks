@@ -115,11 +115,11 @@ h3 {font-family: 'Raleway', sans-serif;}
     50% {transform: rotate(45deg);}
     100% {transform: rotate(0deg);}
 }
-#main .main_top .banner .main_slide .slide02 > div > .fruit { width: 650px; height: 432px; background: url(../img/slide/fruit.png) no-repeat; left: -40%; top: 70%; transform: rotate(15deg); animation: width 3s infinite;}
+#main .main_top .banner .main_slide .slide02 > div > .fruit { width: 650px; height: 432px; background: url(../img/slide/fruit.png) no-repeat; left: -30%; top: 50%; transform: rotate(15deg); animation: width 3s infinite;}
 @keyframes width {
-    0% {transform: scale(0.9,0.9);}
-    50% {transform: scale(1,1);}
-    100% {transform: scale(0.9,0.9);}
+    0% {transform: rotate(15deg) scale(0.9,0.9);}
+    50% {transform: rotate(15deg) scale(1,1);}
+    100% {transform: rotate(15deg) scale(0.9,0.9);}
 }
 #main .main_top .banner .main_slide .slide02 > div > a img {animation: juice 3s infinite;}
 @keyframes juice {
