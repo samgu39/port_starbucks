@@ -37,6 +37,21 @@ $(document).ready(function(){
     
     // 상단 메뉴 검색창 활성화
     
+    var nav = $('#header .nav');
+    var navOffset = nav.offset().top;
+    
+    $(window).scroll(function(){
+        var winScroll = $(this).scrollTop();
+        
+        if (winScroll > navOffset){
+            nav.addClass('on');
+        }else {
+            nav.removeClass('on');
+        };
+    });
+    
+    // nav에 fixed 효과 추가
+    
     var menu = $('#header > .nav > div > ul > li');
     var submenu = $('#header > .nav > div > ul > li > .submenu');
     
@@ -66,10 +81,6 @@ $(document).ready(function(){
       // Optional parameters
       loop: true,
         
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
       pagination: {
         el: '.swiper-pagination',
         dynamicBullets: true,
@@ -176,16 +187,31 @@ $(document).ready(function(){
     
     // top 버튼 활성화
     
-    var show = $('.coffee_find_left');
-    var showOffset = $('.coffee_find_left').offset().top - 500;
+    var show01 = $('.coffee_find_left');
+    var show01Offset = $('.coffee_find_left').offset().top - 800;
+    var show02 = $('.coffee_find_right');
+    var show02Offset = $('.coffee_find_right').offset().top - 800;
+    var suggest = $('#main .main_middle .suggest');
+    var suggestOffset = $('#main .main_middle .suggest').offset().top - 800;
+    var reword = $('#main .main_bottom .rewoard > div > .star .star_rewoard');
+    var rewordOffset = reword.offset().top - 800;
     var store = $('.store_list');
-    var storeOffset = $('.store_list').offset().top - 1000;
+    var storeOffset = $('.store_list').offset().top - 800;
     
     $(window).scroll(function(){
         var wScroll = $(this).scrollTop();
         
-        if (wScroll >= showOffset){
-            show.addClass('on');
+        if (wScroll >= show01Offset){
+            show01.addClass('on');
+            show02.addClass('on');
+        };
+        
+        if (wScroll >= suggestOffset){
+            suggest.addClass('on');
+        };
+        
+        if (wScroll >= rewordOffset){
+            reword.addClass('on');
         };
         
         if (wScroll >= storeOffset){

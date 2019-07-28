@@ -21,6 +21,21 @@ $(document).ready(function(){
     
     // 상단 메뉴 검색창 활성화
     
+    var nav = $('#header .nav');
+    var navOffset = nav.offset().top;
+    
+    $(window).scroll(function(){
+        var winScroll = $(this).scrollTop();
+        
+        if (winScroll > navOffset){
+            nav.addClass('on');
+        }else {
+            nav.removeClass('on');
+        };
+    });
+    
+    // nav에 fixed 효과 추가
+    
     var menu = $('#header > .nav > div > ul > li');
     var submenu = $('#header > .nav > div > ul > li > .submenu');
     
