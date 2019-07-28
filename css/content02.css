@@ -30,17 +30,17 @@ h1, h2 {font-size: 0;}
 h3 {font-family: 'Raleway', sans-serif;}
 
 /* 상단 메뉴 */
-#header {width: 100%; position: absolute; top:0; z-index: 99;}
-#header .top_menu {position: relative; width: 100%; height:35px; }
+#header {width: 100%;}
+#header .top_menu {position: relative; width: 100%; height:35px; background: #eee;}
 #header .top_menu ul {display: flex; position: absolute; right:0;}
-#header .top_menu ul li a {display: block; position: relative; padding:0 10px; font-size:0.9em; line-height: 35px; color: #fff;}
+#header .top_menu ul li a {display: block; position: relative; padding:0 10px; font-size:0.9em; line-height: 35px; color: #555;}
 #header .top_menu ul li .search {display: none; width:0; position: absolute; top:-2px; right:15px; border:1px solid #017143; border-radius: 10px; height: 20px; padding: 5px; font-size: 0.85em; transition: all .3s;}
 #header .top_menu ul li label {display: inline-block; position: relative; right: 4px; top: -8px; width:20px; height:20px; background:url(../img/search02.png) no-repeat; font-size: 0; cursor: pointer;}
 #header .logo {user-select: none; height: 130px;}
 #header .logo a {display: inline-block; position: absolute; left: 50%; transform: translateX(-50%);}
 #header .logo a img {padding: 15px; transition: all .6s;}
 #header .logo a:hover img {margin-right: 170px;}
-#header .logo a i {opacity: 0; position: absolute; left:0; top:50%; transform: translateY(-50%); font-size: 30px; font-weight: bold; letter-spacing: -1px; color:#fff; font-family: 'Raleway', sans-serif; transition: all .6s;}
+#header .logo a i {opacity: 0; position: absolute; left:0; top:50%; transform: translateY(-50%); font-size: 30px; font-weight: bold; letter-spacing: -1px; color:#017143; font-family: 'Raleway', sans-serif; transition: all .6s;}
 #header .logo a:hover i {opacity: 1; left:100px;}
 #header .nav {background: #017143; box-shadow: 0px 0px 8px rgba(0,0,0,0.6);}
 #header .nav.on {position: fixed; top:0; width:100%;}
