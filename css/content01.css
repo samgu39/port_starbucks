@@ -69,8 +69,9 @@ h3 {font-family: 'Raleway', sans-serif;}
 /* 메인 부분 */
 
 /* 메인 슬라이드 */
-#main .main_top .banner {position: relative; width: 100%; height: 100vh; overflow: hidden; margin-bottom: 20px;}
+#main .main_top .banner {position: relative; width: 100%; height: 100vh; overflow: hidden; margin-bottom: 50px;}
 #main .main_top .banner:before {content: ''; display: block; position: absolute; left:0; bottom:0; width:100%; background: url(../img/slide/slide_bottom.png) no-repeat; height: 250px; z-index: 1;}
+#main .main_top .banner .starbucks {color: #fff; font-family: 'Raleway', sans-serif; position: absolute; right: 20px; bottom: -10px; font-size: 4em; font-weight: bold; z-index: 10; }
 #main .main_top .banner .main_slide {position: absolute; left:0; display: flex; width: 100%; height: 100%;}
 #main .main_top .banner .main_slide div {position: absolute; left:0; top:0; width:100%; height: 100%;}
 #main .main_top .banner .main_slide div > .wrap {position: relative; width: 1200px; margin: 0 auto;}
@@ -94,7 +95,7 @@ h3 {font-family: 'Raleway', sans-serif;}
     50% {transform: translateY(20px);}
     100% {transform: translateY(0);}
 }
-#main .main_top .banner .main_slide .slide01 > div > div a p {position: absolute; right: 0; bottom:150px; color:#fff; padding:8px; background:#035ee8; border-radius: 20px; font-weight: bold;}
+#main .main_top .banner .main_slide .slide01 > div > div a p {position: absolute; right: 0; bottom:150px; color:#fff; padding:10px; background:#035ee8; border-radius: 20px; font-family: 'Noto Sans KR', sans-serif; letter-spacing: -1px;}
 #main .main_top .banner .main_slide .slide01 > div > div.img02 a p {right: 50px;}
 #main .main_top .banner .main_slide .slide01 > div > .water {top:50%; left:460px; width: 800px; height: 450px; background:url(../img/slide/slide01_water.png) no-repeat right bottom; z-index: 0; animation: water 3s ease-in-out;}
 @keyframes water {
@@ -198,7 +199,7 @@ a.bx-pager-link.active {background:#017143; width:40px; border-radius: 10px;}
 .content_login .cont_footer p {line-height: 2em; font-size: 0.85em; padding: 10px 10px 30px 10px; box-sizing: border-box; color:#fff; font-weight: bold;}
 
 /* 서브메뉴 */
-.menu_sub {position: absolute; top: 603px; z-index: 5; left: 50%; transform: translateX(-50%); background: #fff; border-radius: 30px 30px 0 0; overflow: hidden;}
+.menu_sub {position: absolute; bottom:-50px; z-index: 10; left: 50%; transform: translateX(-50%); background: #fff; border-radius: 30px 30px 0 0; overflow: hidden;}
 .menu_sub ul {display: flex; justify-content: space-between;}
 .menu_sub ul li { border-right:1px solid #ddd; border-bottom: 2px solid #017143; width:100%;}
 .menu_sub ul li:last-child {border-right: 0;}
