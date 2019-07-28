@@ -119,7 +119,7 @@ $(document).ready(function(){
     question_answer.click(function(e){
         e.preventDefault();
         
-        if (question.offset().top > 600 ) {
+        if (question.offset().top > 1000 ) {
              question.animate({ top : '-=100%' }, 2000);
         }else {
             question.stop().animate({ top : '0' }, 2000);
