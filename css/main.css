@@ -376,5 +376,6 @@ font-weight: bold; color: #017143;}
     html, body {overflow-x: hidden;}
     .wrap {width:100%;}
     #main .main_bottom .store > div > .find_store .store_list div {padding: 15px;}
+    #header .nav div > ul {overflow: hidden;}
     #footer .ft_policy {overflow: hidden;}
 }
