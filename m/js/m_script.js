@@ -19,11 +19,11 @@ $(document).ready(function(){
         if(navi.hasClass('on')){
             navi.removeClass('on');
             navi.animate({left: -300 + "px"},500);
-            navopen.text('OPEN');
+            navopen.text('>>');
         } else {
             navi.addClass('on');
             navi.animate({left: 0 },500);
-            navopen.text('CLOSE');
+            navopen.text('<<');
         };
     });
     
