@@ -77,4 +77,15 @@ $(document).ready(function(){
     
     // top 버튼 활성화
     
+    var tab = $('.tab ul li');
+    
+    tab.mouseover(function(){
+        $(this).children('ul').stop().slideDown();
+    });
+    
+    tab.mouseleave(function(){
+        $(this).children('ul').stop().slideUp();
+    });
+    
+    // 탭메뉴 슬라이드 업/다운
 });
