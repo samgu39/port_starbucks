@@ -512,7 +512,10 @@
           stopAutoOnClick: true,
           pager: true,
         });
-
+        
+        var contect = $('.content .cont');
+        var contOffset = contect.offset().top - 800;
+        
         var sub01 = $('.cont01');
         var sub02 = $('.cont02');
         var sub03 = $('.cont03');
@@ -523,7 +526,11 @@
 
         $(window).scroll(function(){
             var winScroll = $(this).scrollTop();
-
+            
+            if (winScroll > contOffset){
+                contect.addClass('on');
+            };
+            
             if (winScroll > sub01Offset){
                 sub01.addClass('on');
             };
