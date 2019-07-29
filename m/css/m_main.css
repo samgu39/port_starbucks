@@ -287,7 +287,7 @@ font-weight: bold; color: #017143;}
 #main .main_bottom .rewoard > div > .star .star_rewoard p span {user-select: none; font-family: 'Noto Sans KR', sans-serif; line-height: 3em; font-weight: bold; color: #017143; background:#f9e030; padding: 3px 5px;}
 #main .main_bottom .rewoard > div > .star .star_rewoard p strong {line-height: 1.5em; font-weight: bold; color:#f9e030;}
 #main .main_bottom .rewoard > div > .star .star_btn {position: absolute; bottom: 20%; left: 0; transform: translateY(-50%);}
-#main .main_bottom .rewoard > div > .star div button {display: flex; justify-content: center; margin: 10px 0; width: 80px; height: 30px; position: relative; border: 0; font-size: 0.95em; line-height: 30px; background: #78be20; font-family: 'Noto Sans KR', sans-serif; font-weight: bold; color: #333; border-radius: 3px 0 0 3px; z-index: 1; transition: all .3s; cursor: pointer; overflow: hidden;}
+#main .main_bottom .rewoard > div > .star div button {display: flex; justify-content: center; margin: 10px 0; width: 80px; height: 30px; position: relative; border: 0; font-size: 0.95em; line-height: 30px; background: #78be20; font-family: 'Noto Sans KR', sans-serif; font-weight: bold; color: #333; border-radius: 0 3px 3px 0; z-index: 1; transition: all .3s; cursor: pointer; overflow: hidden;}
 #main .main_bottom .rewoard > div > .star div button:hover {color:#78be20;}
 #main .main_bottom .rewoard > div > .star div button:before {content: ''; display: block; position: absolute; right: 0; top:0; width:0; height: 100%; background:#f9e030; border-radius: 3px; z-index: -1; transition: all .3s;}
 #main .main_bottom .rewoard > div > .star div button:hover:before {width: 100%;}
