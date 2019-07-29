@@ -153,7 +153,7 @@ h3 {font-family: 'Raleway', sans-serif;}
 .bx-viewport {height: 100vh;}
 .bx-controls-direction a.bx-prev {position: absolute; left:20px; top:50%; transform: translateY(-50%) rotate(-180deg); background: url(../img/slide_btn.png) no-repeat; font-size:0; width:50px; height:50px;}
 .bx-controls-direction a.bx-next {position: absolute; right:20px; top:50%; transform: translateY(-50%); background: url(../img/slide_btn.png) no-repeat; font-size:0; width:50px; height:50px;}
-.bx-controls-auto {position: absolute; bottom:10px; left:10px; display: flex; z-index: 99;}
+.bx-controls-auto {position: absolute; bottom:7px; left:53%; display: flex; z-index: 99;}
 .bx-controls-auto .bx-controls-auto-item .bx-start {display: block; width:20px; height:20px; font-size:0; background:url(../img/slide/play.png) no-repeat;}
 .bx-controls-auto .bx-controls-auto-item .bx-stop {display: block; width:20px; height:20px; font-size:0; background:url(../img/slide/stop.png) no-repeat;}
 .bx-pager.bx-default-pager {display: block; position: absolute; bottom:10px; left:50%; transform: translateX(-50%); display: flex; z-index: 4;}
