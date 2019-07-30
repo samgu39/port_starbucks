@@ -63,7 +63,7 @@ h3 {font-family: 'Raleway', sans-serif;}
 /* 상단 메뉴 */
 #header {width: 100%; position: absolute; top:0; z-index: 99;}
 #header .top_menu {position: relative; width: 100%; height:35px; }
-#header .top_menu ul {display: flex; position: absolute; right:0;}
+#header .top_menu ul {-ms-display: flex; display: flex; position: absolute; right:0;}
 #header .top_menu ul li a {display: block; position: relative; padding:0 10px; font-size:0.9em; line-height: 35px; color: #fff;}
 #header .top_menu ul li .search {display: none; width:0; position: absolute; top:-2px; right:15px; border:1px solid #017143; border-radius: 10px; height: 20px; padding: 5px; font-size: 0.85em; transition: all .3s;}
 #header .top_menu ul li label {display: inline-block; position: relative; right: 4px; top: -8px; width:20px; height:20px; background:url(../img/search01.png) no-repeat; font-size: 0; cursor: pointer;}
@@ -75,14 +75,14 @@ h3 {font-family: 'Raleway', sans-serif;}
 #header .logo a:hover i {opacity: 1; left:100px;}
 #header .nav {background: #017143; box-shadow: 0px 0px 8px rgba(0,0,0,0.6);}
 #header .nav.on {position: fixed; top:0; width:100%; z-index: 20;}
-#header .nav div > ul {display: flex; justify-content: space-around; text-align: center; position: relative;}
-#header .nav div > ul > li {width: 100%; white-space: nowrap;}
+#header .nav div > ul {-ms-display: flex; display: flex; justify-content: space-around; text-align: center; position: relative;}
+#header .nav div > ul > li {-ms-flex:0 0 16.5%; width: 100%; white-space: nowrap;}
 #header .nav div > ul > li > a {display: block; position: relative; line-height: 40px; color:#fff; font-size: 0.95em; font-family: 'Raleway', sans-serif; transition: all .3s;}
 #header .nav div > ul > li:hover > a {background:#fff; color:#017143;}
 #header .nav div > ul > li > a:before {content: ''; display: block; position: absolute; bottom:0; left:50%; width:0; height: 1px; background:#017143; transform: translateX(-50%); transition: all .6s;}
 #header .nav div > ul > li:hover > a:before {width:100%;}
 #header .nav div > ul > li > .submenu {display: none; position: absolute; left:0; top:40px; width: 100%; background: #fff; box-shadow: 2px 4px 6px rgba(0,0,0,0.2); border-radius: 0 0 10px 10px; z-index: 5;}
-#header .nav div > ul > li > .submenu > ul > li {position: inherit; flex: 3;}
+#header .nav div > ul > li > .submenu > ul > li {position: inherit; -ms-flex: 3; flex: 3;}
 #header .nav div > ul > li > .submenu > ul > li > a {font-size:0.85em; color:#017143; font-weight: bold; white-space: nowrap; padding: 0; border-bottom: 1px solid #ddd; transition: all .3s;}
 #header .nav div > ul > li > .submenu > ul > li > a:before {display: none;}
 #header .nav div > ul > li > .submenu > ul > li:hover > a {background:#017143; color:#fff;}
@@ -103,7 +103,7 @@ h3 {font-family: 'Raleway', sans-serif;}
 #main .main_top .banner {position: relative; width: 100%; height: 100vh; overflow: hidden; margin-bottom: 50px;}
 #main .main_top .banner:before {content: ''; display: block; position: absolute; left:0; bottom:0; width:100%; background: url(../img/slide/slide_bottom.png) no-repeat; height: 250px; z-index: 1;}
 #main .main_top .banner .starbucks {color: #fff; font-family: 'Raleway', sans-serif; position: absolute; right: 20px; bottom: -10px; font-size: 4em; font-weight: bold; z-index: 10; }
-#main .main_top .banner .main_slide {position: absolute; left:0; display: flex; width: 100%; height: 100%;}
+#main .main_top .banner .main_slide {position: absolute; left:0; -ms-display: flex; display: flex; width: 100%; height: 100%;}
 #main .main_top .banner .main_slide div {position: absolute; left:0; top:0; width:100%; height: 100%;}
 #main .main_top .banner .main_slide div > .wrap {position: relative; width: 1200px; margin: 0 auto;}
 #main .main_top .banner .main_slide .slide01 {background:url(../img/slide/slide01_bg.png) center center; background-size:cover; overflow: hidden; }
@@ -170,15 +170,15 @@ h3 {font-family: 'Raleway', sans-serif;}
 .bx-viewport {height: 100vh;}
 .bx-controls-direction a.bx-prev {position: absolute; left:20px; top:50%; transform: translateY(-50%) rotate(-180deg); background: url(../img/slide_btn.png) no-repeat; font-size:0; width:50px; height:50px;}
 .bx-controls-direction a.bx-next {position: absolute; right:20px; top:50%; transform: translateY(-50%); background: url(../img/slide_btn.png) no-repeat; font-size:0; width:50px; height:50px;}
-.bx-controls-auto {position: absolute; bottom:7px; left:53%; display: flex; z-index: 20;}
+.bx-controls-auto {position: absolute; bottom:7px; left:53%; -ms-display: flex; display: flex; z-index: 20;}
 .bx-controls-auto .bx-controls-auto-item .bx-start {display: block; width:20px; height:20px; font-size:0; background:url(../img/slide/play.png) no-repeat;}
 .bx-controls-auto .bx-controls-auto-item .bx-stop {display: block; width:20px; height:20px; font-size:0; background:url(../img/slide/stop.png) no-repeat;}
-.bx-pager.bx-default-pager {display: block; position: absolute; bottom:10px; left:50%; transform: translateX(-50%); display: flex; z-index: 4;}
+.bx-pager.bx-default-pager {display: block; position: absolute; bottom:10px; left:50%; transform: translateX(-50%); -ms-display: flex; display: flex; z-index: 4;}
 .bx-pager-link {display: block; font-size:0; width:5px; height:5px; background:#ddd; border-radius: 50%; margin:5px; transition: all .6s;}
 a.bx-pager-link.active {background:#017143; width:40px; border-radius: 10px;}
 
 /* 메인 띠라인 */
-#main .main_top .line_news {display: flex; width: 100%; height: 45px; background:linear-gradient(to right, #2a3c4b 50%, #2a7c4f 50%);}
+#main .main_top .line_news {-ms-display: flex; display: flex; width: 100%; height: 45px; background:linear-gradient(to right, #2a3c4b 50%, #2a7c4f 50%);}
 #main .main_top .line_news > div > .line_news_left {position: relative; width: 50%;}
 #main .main_top .line_news > div > .line_news_left:after {content: ''; display: block; position: absolute; top:0; right: -30px; width: 30px; height: 45px; border-top: 45px solid #2a3c4b; border-right: 30px solid transparent;}
 #main .main_top .line_news > div > .line_news_left em {font-size: 0.95em; color:#fff; line-height: 45px; letter-spacing: -0.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 95%; display: block;}
@@ -194,7 +194,7 @@ a.bx-pager-link.active {background:#017143; width:40px; border-radius: 10px;}
 #main .main_top .line_news > div > .line_news_box .line_news_notice tbody td a {display: block; text-align: left; color:#fff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 #main .main_top .line_news > div > .line_news_box .line_news_notice tbody td a:hover {text-decoration: underline;}
 #main .main_top .line_news > div > .line_news_box .line_news_pagination {position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%);}
-#main .main_top .line_news > div > .line_news_box .line_news_pagination ul {display: flex;}
+#main .main_top .line_news > div > .line_news_box .line_news_pagination ul {-ms-display: flex; display: flex;}
 #main .main_top .line_news > div > .line_news_box .line_news_pagination ul li.on a {font-weight: bold; color: #2a3c4b; text-decoration: underline;}
 #main .main_top .line_news > div > .line_news_box .line_news_pagination ul li a {display: block; padding: 10px; color: #fff;}
 
@@ -203,7 +203,7 @@ a.bx-pager-link.active {background:#017143; width:40px; border-radius: 10px;}
 #main .main_middle .new_product h3 {position: relative; color:#017143; font-size: 2em; font-weight: bold; text-align: center; padding: 20px; letter-spacing: -1px;}
 #main .main_middle .new_product h3:before {content: ''; display: block; position: absolute; bottom:10px; left:50%; transform: translateX(-50%); width:30px; height: 2px; background:#017143;}
 #main .main_middle .new_product em {display: block; position: absolute; left:50%; transform: translateX(-50%); color:#333; font-size: 1em; padding: 8px; background: #fff; border-radius: 2px;}
-#main .main_middle .new_product > div > div > div > div > div {display: flex; position: relative; overflow: hidden; width: 1125px; margin: 0 auto; padding: 20px; background: #fff; box-shadow: 0px 0px 10px rgba(0,0,0,0.2); border-radius: 5px; box-sizing: border-box;}
+#main .main_middle .new_product > div > div > div > div > div {-ms-display: flex; display: flex; position: relative; overflow: hidden; width: 1125px; margin: 0 auto; padding: 20px; background: #fff; box-shadow: 0px 0px 10px rgba(0,0,0,0.2); border-radius: 5px; box-sizing: border-box;}
 #main .main_middle .new_product > div > div > div > div > div:before {content: 'NEW'; display: block; position: absolute; left:-33px; top:27px; width:150px; height:30px; background: #017143; transform: rotate(-45deg); font-weight: bold; text-align: center; color:#fff; line-height: 30px; letter-spacing: 3px; box-shadow: 2px 2px 5px rgba(0,0,0,0.3); z-index: 99; }
 #main .main_middle .new_product > div > div > div > div > div:after {content: ''; display: block; position: absolute; top:0; right: 30px; width:200px; height: 350px; background: url(../img/productboxbg.jpg) no-repeat;}
 #main .main_middle .new_product > div > div > div > div > div .product_img {position: relative; width: 300px; height: 300px; border:1px solid #ddd; border-radius: 5px;}
@@ -232,8 +232,8 @@ a.bx-pager-link.active {background:#017143; width:40px; border-radius: 10px;}
 font-weight: bold; color: #017143;}
 #main .main_middle .coffee_find .coffee_find_right .question > div h4 {text-align: center; margin-top: 20px; font-size: 1.3em; font-family: 'Noto Sans KR', sans-serif;}
 #main .main_middle .coffee_find .coffee_find_right .question > div h4 span {font-weight: bold;}
-#main .main_middle .coffee_find .coffee_find_right .question > div ul {display: flex; justify-content: center; margin-top: 60px;}
-#main .main_middle .coffee_find .coffee_find_right .question > div ul li {width: 100%; height: 150px; margin: 0 10px;}
+#main .main_middle .coffee_find .coffee_find_right .question > div ul {-ms-display: flex; display: flex; justify-content: center; margin-top: 60px;}
+#main .main_middle .coffee_find .coffee_find_right .question > div ul li {-ms-flex:0 0 22%;width: 100%; height: 150px; margin: 0 10px;}
 #main .main_middle .coffee_find .coffee_find_right .question > div ul li a {color:#fff; font-weight: bold; font-family: 'Noto Sans KR', sans-serif;}
 #main .main_middle .coffee_find .coffee_find_right .question > div ul.plus4 li a {display: block; width: 100%; height: 100%; background: #fff; border-radius: 50%; text-align: center; line-height: 150px;}
 #main .main_middle .coffee_find .coffee_find_right .question > div ul.plus3 li a {display: block; width: 72%; height: 100%; background: #fff; border-radius: 50%; text-align: center; line-height: 150px; margin-left: 25px;}
@@ -256,8 +256,8 @@ font-weight: bold; color: #017143;}
 #main .main_middle .suggest > div > h3:before {content: ''; display: block; position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); width: 30px; height: 2px; background: #017143;}
 #main .main_middle .suggest > div > em {display: block; position: absolute; left: 50%; transform: translateX(-50%); color: #333; font-size: 1em; padding: 8px; background: #fff; border-radius: 2px;}
 #main .main_middle .suggest .slide {width:1200px; height: 390px; position: relative; overflow: hidden; margin-top:80px;}
-#main .main_middle .suggest .slide .movebox {position: absolute; left:0; display: flex; width:1200px;}
-#main .main_middle .suggest .slide .movebox > div {display: inline-flex; position: absolute; left:0; top:0; width: 100%; background: #fff; border-radius: 3px; padding: 20px; box-sizing: border-box;}
+#main .main_middle .suggest .slide .movebox {position: absolute; left:0; -ms-display: flex; display: flex; width:1200px;}
+#main .main_middle .suggest .slide .movebox > div {-ms-display: inline-flex; display: inline-flex; position: absolute; left:0; top:0; width: 100%; background: #fff; border-radius: 3px; padding: 20px; box-sizing: border-box;}
 #main .main_middle .suggest .slide .movebox > div .suggest_left {width: 350px; height: 350px;}
 #main .main_middle .suggest .slide .movebox > div .suggest_left img {width: 100%; height: 100%; border-radius: 20px;}
 #main .main_middle .suggest .slide .movebox > div .suggest_right {position: relative; width: 800px; margin-left: 20px;}
@@ -278,7 +278,7 @@ font-weight: bold; color: #017143;}
 
 /* 보도자료와 이용안내 */
 #main .main_bottom .line_board {background: linear-gradient(to right, #011f4b 50%,#f4f6f8 50%);}
-#main .main_bottom .line_board > div > .line_guide {display: flex; padding: 10px 0; overflow: hidden;}
+#main .main_bottom .line_board > div > .line_guide {-ms-display: flex; display: flex; padding: 10px 0; overflow: hidden;}
 #main .main_bottom .line_board > div > .line_guide .line_guide_left {width: 50%; position: relative;}
 #main .main_bottom .line_board > div > .line_guide .line_guide_left:after {content: ''; display: block; position: absolute; top:-20px; right:-78px; width:40px; height: 70px; border-left: 40px solid #011f4b; border-top: 100px solid transparent;}
 #main .main_bottom .line_board > div > .line_guide .line_guide_left h4 {display: inline-block; width: 50px;}
@@ -319,7 +319,7 @@ font-weight: bold; color: #017143;}
 #main .main_bottom .rewoard > div > .star .star_rewoard p span {user-select: none; font-family: 'Noto Sans KR', sans-serif; line-height: 3em; font-weight: bold; color: #017143; background:#f9e030; padding: 3px 5px;}
 #main .main_bottom .rewoard > div > .star .star_rewoard p strong {line-height: 1.5em; font-weight: bold; color:#f9e030;}
 #main .main_bottom .rewoard > div > .star .star_btn {position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
-#main .main_bottom .rewoard > div > .star div button {display: flex; justify-content: center; margin: 10px 0; width: 100%; height: 30px; position: relative; border: 0; font-size: 0.95em; line-height: 30px; background: #78be20; font-family: 'Noto Sans KR', sans-serif; font-weight: bold; color: #333; border-radius: 3px; z-index: 1; transition: all .3s; cursor: pointer;}
+#main .main_bottom .rewoard > div > .star div button {-ms-display: flex; display: flex; justify-content: center; margin: 10px 0; width: 100%; height: 30px; position: relative; border: 0; font-size: 0.95em; line-height: 30px; background: #78be20; font-family: 'Noto Sans KR', sans-serif; font-weight: bold; color: #333; border-radius: 3px; z-index: 1; transition: all .3s; cursor: pointer;}
 #main .main_bottom .rewoard > div > .star div button:hover {color:#78be20;}
 #main .main_bottom .rewoard > div > .star div button:before {content: ''; display: block; position: absolute; right: 0; top:0; width:0; height: 100%; background:#f9e030; border-radius: 3px; z-index: -1; transition: all .3s;}
 #main .main_bottom .rewoard > div > .star div button:hover:before {width: 100%;}
@@ -330,7 +330,7 @@ font-weight: bold; color: #017143;}
 #main .main_bottom .store > div > .find_store h4 {position: relative; color: #017143; font-size: 1.5em; font-weight: bold; font-family: 'Noto Sans KR', sans-serif; text-align: center; padding: 20px; line-height: 80px; letter-spacing: -1px;}
 #main .main_bottom .store > div > .find_store h4:before {content: ''; display: block; position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); width: 30px; height: 2px; background: #017143;}
 #main .main_bottom .store > div > .find_store em {display: block; position: absolute; left: 50%; transform: translateX(-50%); color: #333; font-size: 1em; padding: 8px; background: #fff; border-radius: 2px;}
-#main .main_bottom .store > div > .find_store .store_list {display: flex; margin: 80px 0 40px; transition: all 1s;}
+#main .main_bottom .store > div > .find_store .store_list {-ms-display: flex; display: flex; margin: 80px 0 40px; transition: all 1s;}
 #main .main_bottom .store > div > .find_store .store_list div {opacity: 0; width: 400px; height: 450px; background: #fff; margin-right: 10px; padding: 20px; border-radius: 20px; box-sizing: border-box; transition: all 0.3s;}
 #main .main_bottom .store > div > .find_store .store_list.on div {opacity: 1; }
 #main .main_bottom .store > div > .find_store .store_list.on div:last-child {margin:0;}
@@ -347,25 +347,25 @@ font-weight: bold; color: #017143;}
 /* 하단 메뉴 */
 /* 푸터 메뉴 */
 #footer {background: #2c2a29; color:#fff; font-size: 0.85em; line-height: 1.2em;}
-#footer .ft_menu ul {display: flex; justify-content: space-between;}
-#footer .ft_menu ul li {text-align: center; width: 100%; margin-top: 20px;}
+#footer .ft_menu ul {-ms-display: flex; display: flex; justify-content: space-between;}
+#footer .ft_menu ul li {-ms-flex:0 0 20%; text-align: center; width: 100%; margin-top: 20px;}
 #footer .ft_menu ul li a {display: block; width: 100%; height: 40px; line-height: 40px; font-weight: bold; color:#fff; border-bottom: 1px solid #ddd;}
 #footer .ft_menu ul li ul {display: block; margin-top:10px;}
 #footer .ft_menu ul li ul li {margin:0;}
 #footer .ft_menu ul li ul li a {width: 100%; height: 20px; line-height: 20px; font-weight: normal; border: 0; padding: 4px 0; font-size: 0.85em;}
 /* 자사 방침 */
-#footer .ft_policy {display: flex; justify-content: space-between; margin: 20px 0 10px;}
-#footer .ft_policy > div {position: relative; width: 100%; white-space: nowrap;}
+#footer .ft_policy {-ms-display: flex; display: flex; justify-content: space-between; margin: 20px 0 10px;}
+#footer .ft_policy > div {-ms-flex:0 0 14%; position: relative; width: 100%; white-space: nowrap;}
 #footer .ft_policy > div:before {content: ''; display: block; position: absolute; left:0; top:8px; width:1px; height: 15px; background:#ddd;}
 #footer .ft_policy > div:first-child:before {display: none;}
 #footer .ft_policy > .important a {color:#f9e030; font-weight: bold;}
 #footer .ft_policy > div a {display: block; width: 100%; height: 30px; line-height: 30px; color: #ddd; font-size: 0.9em; text-align: center;}
 /* 단축 메뉴 */
-#footer .ft_btn ul {display: flex; justify-content: center;}
+#footer .ft_btn ul {-ms-display: flex; display: flex; justify-content: center;}
 #footer .ft_btn ul li {margin: 20px 0;}
 #footer .ft_btn ul li a {padding: 10px; color: #fff; border: 2px solid #fff; border-radius: 30px; margin: 5px; font-weight: bold;}
 /* 그 외 */
-#footer .ft_box {display: flex; justify-content: center; margin-top: 10px;}
+#footer .ft_box {-ms-display: flex; display: flex; justify-content: center; margin-top: 10px;}
 #footer .ft_box > div {padding: 5px 20px; color: #ddd;}
 #footer .ft_box > div a {color: #ddd;}
 #footer .ft_copyright {padding: 20px 0; text-align: center; font-size: 0.9em;}
