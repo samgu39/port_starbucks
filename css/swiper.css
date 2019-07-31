@@ -117,7 +117,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none;
+  
   z-index: 10;
 }
 .swiper-container-3d .swiper-slide-shadow-left {
@@ -172,7 +172,7 @@
 .swiper-button-next.swiper-button-disabled {
   opacity: 0.35;
   cursor: auto;
-  pointer-events: none;
+  
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
@@ -513,7 +513,7 @@ button.swiper-pagination-bullet {
   position: absolute;
   left: 0;
   top: 0;
-  pointer-events: none;
+  
   opacity: 0;
   z-index: -1000;
 }
@@ -523,23 +523,23 @@ button.swiper-pagination-bullet {
   transition-timing-function: ease-out;
 }
 .swiper-container-fade .swiper-slide {
-  pointer-events: none;
+  
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
 }
 .swiper-container-fade .swiper-slide .swiper-slide {
-  pointer-events: none;
+  
 }
 .swiper-container-fade .swiper-slide-active,
 .swiper-container-fade .swiper-slide-active .swiper-slide-active {
-  pointer-events: auto;
+  
 }
 .swiper-container-cube {
   overflow: visible;
 }
 .swiper-container-cube .swiper-slide {
-  pointer-events: none;
+  
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 1;
@@ -551,7 +551,7 @@ button.swiper-pagination-bullet {
   height: 100%;
 }
 .swiper-container-cube .swiper-slide .swiper-slide {
-  pointer-events: none;
+  
 }
 .swiper-container-cube.swiper-container-rtl .swiper-slide {
   -webkit-transform-origin: 100% 0;
@@ -560,13 +560,13 @@ button.swiper-pagination-bullet {
 }
 .swiper-container-cube .swiper-slide-active,
 .swiper-container-cube .swiper-slide-active .swiper-slide-active {
-  pointer-events: auto;
+  
 }
 .swiper-container-cube .swiper-slide-active,
 .swiper-container-cube .swiper-slide-next,
 .swiper-container-cube .swiper-slide-prev,
 .swiper-container-cube .swiper-slide-next + .swiper-slide {
-  pointer-events: auto;
+  
   visibility: visible;
 }
 .swiper-container-cube .swiper-slide-shadow-top,
@@ -593,17 +593,17 @@ button.swiper-pagination-bullet {
   overflow: visible;
 }
 .swiper-container-flip .swiper-slide {
-  pointer-events: none;
+  
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 1;
 }
 .swiper-container-flip .swiper-slide .swiper-slide {
-  pointer-events: none;
+  
 }
 .swiper-container-flip .swiper-slide-active,
 .swiper-container-flip .swiper-slide-active .swiper-slide-active {
-  pointer-events: auto;
+  
 }
 .swiper-container-flip .swiper-slide-shadow-top,
 .swiper-container-flip .swiper-slide-shadow-bottom,
