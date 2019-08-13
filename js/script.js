@@ -1,10 +1,5 @@
 $(document).ready(function(){
-    var uAgent = navigator.userAgent.toLowerCase();
-    var mobilePhones = new Array('iphone','ipod','android','blackberry','windows ce','nokia','webos','opera mini','sonyericsson','opera mobi','iemobile');
-    for(var i=0;i<mobilePhones.length;i++)
-    if(uAgent.indexOf(mobilePhones[i]) != -1){
-    document.location="./m/index.html";
-    }
+
     
     // 모바일 체크 후 페이지 이동 스크립트
     
@@ -100,20 +95,6 @@ $(document).ready(function(){
     });
     
     // swiper 슬라이드 코드
-    
-    var youtube = $('.youtube_box iframe');
-    
-    $(window).resize(function(){
-        var winWidth = $(this).width();
-        
-        //console.log(winWidth);
-        
-        youtube.css({"width":"winWidth" + "px"});
-    });
-    
-    $(window).trigger('resize');
-    
-    // 유튜브 모바일 PC버전 스크립트
     
     $('#favorite .favorite_close a').click(function(a){
         a.preventDefault();
