@@ -407,7 +407,6 @@ a.bx-pager-link.active {background:#017143; width:40px; border-radius: 10px;}
 @media all and (max-width: 1200px) {
     html, body {overflow-x: hidden;}
     .wrap {width:100%;}
-    #main .main_top .youtube_box {padding-bottom:56.25%;}
     #main .main_bottom .store > div > .find_store .store_list div {padding: 15px;}
     #header .nav div > ul {overflow: hidden;}
     #footer .ft_policy {overflow: hidden;}
