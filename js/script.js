@@ -1,13 +1,12 @@
-$(document).ready(function(){
     var uAgent = navigator.userAgent.toLowerCase();
     var mobilePhones = new Array('iphone','ipod','android','blackberry','windows ce','nokia','webos','opera mini','sonyericsson','opera mobi','iemobile');
     for(var i=0;i<mobilePhones.length;i++)
     if(uAgent.indexOf(mobilePhones[i]) != -1){
     document.location="./m/index.html";
     }
-    
     // 모바일 체크 후 페이지 이동 스크립트
-    
+
+$(document).ready(function(){
     var skip = $('#skip');
     
     skip.focusin(function(){
