@@ -101,21 +101,19 @@ $(document).ready(function(){
     
     // swiper 슬라이드 코드
     
-    /* var line= $('.line_news_right a');
+    var youtube = $('.youtube_box iframe');
     
-    line.click(function(a){
-        a.preventDefault();
+    $(window).resize(function(){
+        var winWidth = $(this).width();
         
-        $('.line_news_right').toggleClass('on')
+        //console.log(winWidth);
         
-        if($('.line_news_right').hasClass('on')){
-            $('.line_news_box').slideDown();
-        }else{
-            $('.line_news_box').slideUp();
-        };
-    }); */
+        youtube.css({"width":"winWidth" + "px"});
+    });
     
-    // 공지사항 창 활성화
+    $(window).trigger('resize');
+    
+    // 유튜브 모바일 PC버전 스크립트
     
     $('#favorite .favorite_close a').click(function(a){
         a.preventDefault();
