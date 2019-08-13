@@ -30,28 +30,34 @@ h1, h2 {font-size: 0;}
 h3 {font-family: 'Raleway', sans-serif;}
 
 /* 상단 메뉴 */
-#header {width: 100%; position: absolute; top:0; z-index: 99;}
-#header .top_menu {position: relative; width: 100%; height:35px; }
+#header {width: 100%; height: 100%; background: #fff; z-index: 99;}
+#header .top_menu {position: relative; width: 100%; height:35px; border-top:4px solid #017143;}
 #header .top_menu ul {-ms-display: flex; display: flex; position: absolute; right:0;}
-#header .top_menu ul li a {display: block; position: relative; padding:0 10px; font-size:0.9em; line-height: 35px; color: #fff;}
-#header .top_menu ul li .search {display: none; width:0; position: absolute; top:-2px; right:15px; border:1px solid #017143; border-radius: 10px; height: 20px; padding: 5px; font-size: 0.85em; transition: all .3s;}
-#header .top_menu ul li label {display: inline-block; position: relative; right: 4px; top: -8px; width:20px; height:20px; background:url(../img/search01.png) no-repeat; font-size: 0; cursor: pointer;}
+#header .top_menu ul li a {display: block; position: relative; padding:0 10px; font-size:0.9em; line-height: 35px; color: #333;}
+#header .top_menu ul li .search {width:200px; position: absolute; top:-100px; right:30px; border:6px solid #017143; box-sizing: border-box; border-radius: 10px; padding: 5px; font-size: 0.85em; transition: all .3s;}
+#header .top_menu ul li .search:focus {top:0;}
+#header .top_menu ul li label {display: inline-block; position: relative; right: 4px; top: -8px; width:20px; height:20px; background:url(../img/search02.png) no-repeat; font-size: 0; cursor: pointer;}
 #header .logo {user-select: none; height: 130px;}
 #header .logo a {display: inline-block; position: absolute; left: 50%; transform: translateX(-50%);}
-#header .logo a img {padding: 15px; transition: all .6s;}
-#header .logo a:hover img {margin-right: 170px;}
-#header .logo a i {opacity: 0; position: absolute; left:0; top:50%; transform: translateY(-50%); font-size: 30px; font-weight: bold; letter-spacing: -1px; color:#fff; font-family: 'Raleway', sans-serif; transition: all .6s;}
-#header .logo a:hover i {opacity: 1; left:100px;}
-#header .nav {background: #017143; box-shadow: 0px 0px 8px rgba(0,0,0,0.6);}
-#header .nav.on {position: fixed; top:0; width:100%; z-index: 20;}
+#header .logo a img {padding: 15px; transition: all .6s; animation: logo01 .6s; animation-fill-mode: forwards;}
+@keyframes logo01 {
+    to {margin-right: 170px;}
+}
+#header .logo a i {opacity: 0; position: absolute; left:0; top:50%; transform: translateY(-50%); font-size: 30px; font-weight: bold; letter-spacing: -1px; color:#017143; font-family: 'Raleway', sans-serif; transition: all .6s; animation: logo02 .6s; animation-fill-mode: forwards;}
+@keyframes logo02 {
+    to {opacity: 1; left:100px;}
+}
+#header .nav.on {position: fixed; top:0; width:100%; height: 60px; background: #fff; z-index: 30; border-bottom: 2px solid #017143;}
+#header .nav.on div > ul > li > a {line-height: 60px;}
+#header .nav.on div > ul > li > .submenu {top:60px;}
 #header .nav div > ul {-ms-display: flex; display: flex; justify-content: space-around; text-align: center; position: relative;}
 #header .nav div > ul > li {-ms-flex:0 0 16.5%; width: 100%; white-space: nowrap;}
-#header .nav div > ul > li > a {display: block; position: relative; line-height: 40px; color:#fff; font-size: 0.95em; font-family: 'Raleway', sans-serif; transition: all .3s;}
-#header .nav div > ul > li:hover > a {background:#fff; color:#017143;}
-#header .nav div > ul > li > a:before {content: ''; display: block; position: absolute; bottom:0; left:50%; width:0; height: 1px; background:#017143; transform: translateX(-50%); transition: all .6s;}
+#header .nav div > ul > li > a {display: block; position: relative; line-height: 40px; color:#333; font-size: 0.95em; font-family: 'Raleway', sans-serif; transition: all .3s;}
+#header .nav div > ul > li:hover > a {background:#017143; color:#fff;}
+#header .nav div > ul > li > a:before {content: ''; display: block; position: absolute; bottom:0; left:50%; width:0; height: 1px; background:#fff; transform: translateX(-50%); transition: all .6s;}
 #header .nav div > ul > li:hover > a:before {width:100%;}
 #header .nav div > ul > li > .submenu {display: none; position: absolute; left:0; top:40px; width: 100%; background: #fff; box-shadow: 2px 4px 6px rgba(0,0,0,0.2); border-radius: 0 0 10px 10px; z-index: 5;}
-#header .nav div > ul > li > .submenu > ul > li {position: inherit; -ms-flex:3; flex: 3;}
+#header .nav div > ul > li > .submenu > ul > li {position: inherit; -ms-flex: 3; flex: 3;}
 #header .nav div > ul > li > .submenu > ul > li > a {font-size:0.85em; color:#017143; font-weight: bold; white-space: nowrap; padding: 0; border-bottom: 1px solid #ddd; transition: all .3s;}
 #header .nav div > ul > li > .submenu > ul > li > a:before {display: none;}
 #header .nav div > ul > li > .submenu > ul > li:hover > a {background:#017143; color:#fff;}
@@ -69,18 +75,15 @@ h3 {font-family: 'Raleway', sans-serif;}
 /* 메인 부분 */
 
 /* 메인 슬라이드 */
-#main .main_top .banner {position: relative; width: 100%; height: 100vh; overflow: hidden; margin-bottom: 50px;}
-#main .main_top .banner:before {content: ''; display: block; position: absolute; left:0; bottom:0; width:100%; background: url(../img/slide/slide_bottom.png) no-repeat; height: 250px; z-index: 1;}
-#main .main_top .banner .starbucks {color: #fff; font-family: 'Raleway', sans-serif; position: absolute; right: 20px; bottom: -10px; font-size: 4em; font-weight: bold; z-index: 10; }
+#main .main_top .banner {position: relative; width: 100%; height: 1000px; overflow: hidden;}
 #main .main_top .banner .main_slide {position: absolute; left:0; -ms-display: flex; display: flex; width: 100%; height: 100%;}
 #main .main_top .banner .main_slide div {position: absolute; left:0; top:0; width:100%; height: 100%;}
 #main .main_top .banner .main_slide div > .wrap {position: relative; width: 1200px; margin: 0 auto;}
 #main .main_top .banner .main_slide .slide01 {background:url(../img/slide/slide01_bg.png) center center; background-size:cover; overflow: hidden; }
 #main .main_top .banner .main_slide .slide02 {background:url(../img/slide/slide02_bg.png) center center; background-size:cover; overflow: hidden; }
 #main .main_top .banner .main_slide .slide03 {background:url(../img/slide/slide03_bg.png) center center; background-size:cover; overflow: hidden; }
-#main .main_top .banner .main_slide div h2 {display:inline-block; position: absolute; top: 30%; font-size: 2em; font-weight: bold; font-family: 'Noto Sans KR', sans-serif; padding: 10px; background: #fff; letter-spacing: -1px; z-index: 2; border-radius: 10px;}
-#main .main_top .banner .main_slide div em {display: block; width:600px; position: absolute; top: 40%; padding: 10px; font-size:1.2em; font-family: 'Noto Sans KR', sans-serif; font-weight: bold; border-bottom: 2px solid #fff; z-index: 2; letter-spacing: -1px;}
-#main .main_top .banner .main_slide .slide01 h2 {color: #035ee8;}
+#main .main_top .banner .main_slide div h2 {display:inline-block; position: absolute; top: 25%; padding: 10px; letter-spacing: -1px; z-index: 2;}
+#main .main_top .banner .main_slide div em {display: block; position: absolute; top: 30%; left:40%; padding: 10px; z-index: 2;}
 #main .main_top .banner .main_slide .slide01 em {color:#2742a9;}
 #main .main_top .banner .main_slide .slide01 > div > div.img01 a {right: 400px; bottom:10%; width: 240px; }
 #main .main_top .banner .main_slide .slide01 > div > div.img02 a {right: 120px; bottom:10%; width: 300px; }
@@ -103,8 +106,7 @@ h3 {font-family: 'Raleway', sans-serif;}
     50% {top:40%; opacity: 0.5;}
     100% {top:50%; opacity: 1;}
 }
-#main .main_top .banner .main_slide .slide02 h2 {color:#ff7f50;}
-#main .main_top .banner .main_slide .slide02 em {color:#ff3300;}
+#main .main_top .banner .main_slide .slide02 em {top:60%; left:20%; transform: rotate(-10deg);}
 #main .main_top .banner .main_slide .slide02 > div > a {position: absolute; width: 240px; height: 450px; right: 20px; bottom: 10%;}
 #main .main_top .banner .main_slide .slide02 > div > a img { padding-top:10px;}
 #main .main_top .banner .main_slide .slide02 > div > div {position: absolute;}
@@ -128,15 +130,15 @@ h3 {font-family: 'Raleway', sans-serif;}
     60% {transform: rotate(-10deg);}
     100% {transform: rotate(0deg);}
 }
-#main .main_top .banner .main_slide .slide03 h2 {color:#006633;}
-#main .main_top .banner .main_slide .slide03 em {color:#fff;}
+#main .main_top .banner .main_slide .slide03 h2 {top:30%; left:0;}
+#main .main_top .banner .main_slide .slide03 em {top:50%; left:10%; transform: rotate(-3deg);}
 #main .main_top .banner .main_slide .slide03 > div > a {position: absolute; left:60%; bottom: 10%; width: 400px; height: 491px; z-index: 1;}
 #main .main_top .banner .main_slide .slide03 > div > a img { padding-top:20px; z-index: 1;}
 #main .main_top .banner .main_slide .slide03 > div > .avocado01 {position: absolute; width: 250px; height: 314px; background: url(../img/slide/avocado_01.png) no-repeat; left: -25%; top: -5%;}
 #main .main_top .banner .main_slide .slide03 > div > .avocado02 {position: absolute; width: 250px; height: 339px; background: url(../img/slide/avocado_02.png) no-repeat; left: 100%; top: 70%; transform: rotate(-20deg);}
 
 /* 메인 슬라이드 부품 */
-.bx-viewport {height: 100vh;}
+.bx-viewport {height: 1000px;}
 .bx-controls-direction a.bx-prev {position: absolute; left:20px; top:50%; transform: translateY(-50%) rotate(-180deg); background: url(../img/slide_btn.png) no-repeat; font-size:0; width:50px; height:50px;}
 .bx-controls-direction a.bx-next {position: absolute; right:20px; top:50%; transform: translateY(-50%); background: url(../img/slide_btn.png) no-repeat; font-size:0; width:50px; height:50px;}
 .bx-controls-auto {position: absolute; bottom:7px; left:53%; -ms-display: flex; display: flex; z-index: 20;}
@@ -221,7 +223,9 @@ a.bx-pager-link.active {background:#017143; width:40px; border-radius: 10px;}
 .tab ul li.more {background: url(../img/more.png) no-repeat right 10px center;}
 .tab ul li a {display: block; width: 100%; height: 100%; color:#fff; font-family: 'Raleway', sans-serif;}
 .tab ul li a img {width: 30px; height: 30px; padding: 10px;}
-.tab ul li ul {display: none; position: absolute; width: 220px; height: auto; background: #fff; z-index: 10;}
+.tab ul li ul {display: none; position: absolute; width: 220px; height: auto; background: #fff; z-index: 10; border: 1px solid #ccc;}
+.tab ul li ul li {border-bottom: 1px solid #ccc;}
+.tab ul li ul li:last-child {border:none;}
 .tab ul li ul li:before {display: none;}
 .tab ul li ul li a {color:#333; font-family: 'Raleway', sans-serif; font-size: 0.9em; transition: all .3s;}
 .tab ul li ul li:hover a {background: #bdd7cc; color:#017143;}
