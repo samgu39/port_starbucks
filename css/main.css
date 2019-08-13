@@ -91,7 +91,7 @@ h3 {font-family: 'Raleway', sans-serif;}
 #header .nav div > ul > li:hover > a:before {width:100%;}
 #header .nav div > ul > li > .submenu {display: none; position: absolute; left:0; top:40px; width: 100%; background: #fff; box-shadow: 2px 4px 6px rgba(0,0,0,0.2); border-radius: 0 0 10px 10px; z-index: 5;}
 #header .nav div > ul > li > .submenu > ul > li {position: inherit; -ms-flex: 3; flex: 3;}
-#header .nav div > ul > li > .submenu > ul > li > a {font-size:0.85em; color:#017143; font-weight: bold; white-space: nowrap; padding: 0; border-bottom: 1px solid #ddd; transition: all .3s;}
+#header .nav div > ul > li > .submenu > ul > li > a {font-size:0.85em; color:#017143; font-weight: bold; white-space: nowrap; padding: 0; border-bottom: 1px solid #ddd; line-height: 3em; transition: all .3s;}
 #header .nav div > ul > li > .submenu > ul > li > a:before {display: none;}
 #header .nav div > ul > li > .submenu > ul > li:hover > a {background:#017143; color:#fff;}
 #header .nav div > ul > li > .submenu > ul > li.on {background:#017143; color:#fff;}
