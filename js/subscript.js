@@ -43,8 +43,21 @@ $(document).ready(function(){
         var menuidx = $(this).index();
         var subidx = submenu.eq(menuidx);
         subidx.stop().slideDown();
+        subidx.css({"height":"auto"});
     });
     menu.mouseleave(function(){
+        var menuidx = $(this).index();
+        var subidx = submenu.eq(menuidx);
+        subidx.stop().slideUp();
+    });
+    
+    menu.focusin(function(){
+        var menuidx = $(this).index();
+        var subidx = submenu.eq(menuidx);
+        subidx.stop().slideDown();
+        subidx.css({"height":"auto"});
+    });
+    menu.focusout(function(){
         var menuidx = $(this).index();
         var subidx = submenu.eq(menuidx);
         subidx.stop().slideUp();
