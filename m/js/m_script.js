@@ -1,12 +1,12 @@
 $(document).ready(function(){
     
-    var popup_port_close = $('.portfolio_popup .portfolio_popup_close a');
-    var popup_port = $('.portfolio_popup');
+    var popupPortClose = $('.portfolio_popup .portfolio_popup_close a');
+    var popupPort = $('.portfolio_popup');
     
-    popup_port_close.click(function(e){
+    popupPortClose.click(function(e){
         e.preventDefault();
         
-        popup_port.hide(800);
+        popupPort.hide(800);
     });
     
     // 포트폴리오 홈페이지 명시 팝업창 닫기 스크립트
@@ -15,28 +15,29 @@ $(document).ready(function(){
     
     nav.click(function(e){
         e.preventDefault();
-        var navbtn = $(this);
         
-        navbtn.addClass('on').siblings().removeClass('on');
+        var navBtn = $(this);
+        
+        navBtn.addClass('on').siblings().removeClass('on');
     });
     
     // 메뉴 탭 여닫기 스크립트
     
-    var navclose = $('.nav .nav_close');
-    var navopen = $('.nav .nav_close > a');
+    var navClose = $('.nav .nav_close');
+    var navOpen = $('.nav .nav_close > a');
     var navi = $('.nav');
     
-    navclose.click(function(e){
+    navClose.click(function(e){
         e.preventDefault();
         
         if(navi.hasClass('on')){
             navi.removeClass('on');
             navi.animate({left: -300 + "px"},500);
-            navopen.text('>>');
+            navOpen.text('>>');
         } else {
             navi.addClass('on');
             navi.animate({left: 0 },500);
-            navopen.text('<<');
+            navOpen.text('<<');
         };
     });
     
@@ -82,16 +83,16 @@ $(document).ready(function(){
     
     // 나만의 음료로 등록 되었습니다 창 닫기
     
-    var questionbox = $('.coffee_find_left');
+    var questionBox = $('.coffee_find_left');
     
-    questionbox.click(function(){
-        questionbox.hide();
+    questionBox.click(function(){
+        questionBox.hide();
     });
     
     var question = $('.coffee_find_right .question');
-    var question_answer = $('.coffee_find_right .question > div ul li a');
+    var questionAnswer = $('.coffee_find_right .question > div ul li a');
     
-    question_answer.click(function(e){
+    questionAnswer.click(function(e){
         e.preventDefault();
         //console.log(question.offset().top);
         
@@ -104,23 +105,23 @@ $(document).ready(function(){
     
     // 나와 어울리는 커피 찾기 스크립트
     
-    var slidebox = $('.slide .movebox > div');
+    var slideBox = $('.slide .movebox > div');
     var slideCount = slidebox.length;
     var currentIndex = 0;
     
-    slidebox.each(function(){
-        var slidelenght = $(this);
-        var slideboxindx= slidelenght.index();
-        //console.log(slideboxindx);
-        var moveleft = slideboxindx * 100 + "%";
+    slideBox.each(function(){
+        var slideLenght = $(this);
+        var slideBoxIndx= slideLenght.index();
+        //console.log(slideBoxIndx);
+        var moveLeft = slideBoxIndx * 100 + "%";
         
-        slidelenght.css({ left : moveleft });
+        slideLenght.css({ left : moveleft });
     });
     
     $('.slide_prev').click(function(){
-            slidebox.animate({ left : '+=100%' }, 300);
+            slideBox.animate({ left : '+=100%' }, 300);
             currentIndex -= 1;
-            console.log(currentIndex);
+            //console.log(currentIndex);
             
             if(currentIndex == 0){
             //$('.slide_prev').css("display","none");
@@ -132,9 +133,9 @@ $(document).ready(function(){
         });
         
     $('.slide_next').click(function(){
-            slidebox.animate({ left : '-=100%' }, 300);
+            slideBox.animate({ left : '-=100%' }, 300);
             currentIndex += 1;
-            console.log(currentIndex);
+            //console.log(currentIndex);
             
             if(currentIndex === slideCount -1){
             $('.slide_next').addClass('off');
@@ -154,10 +155,11 @@ $(document).ready(function(){
     
     // bxSlider 슬라이드 스크립트
     
-    var btn_top = $('#footer .top_btn');
+    var btnTop = $('#footer .top_btn');
     
-    btn_top.click(function(e){
+    btnTop.click(function(e){
         e.preventDefault();
+        
         $('html, body').animate({ scrollTop : 0 },500);
     });
     
