@@ -1,5 +1,14 @@
 $(document).ready(function(){
     
+    var popup_port_close = $('.portfolio_popup .portfolio_popup_close a');
+    var popup_port = $('.portfolio_popup');
+    
+    popup_port_close.click(function(e){
+        popup_port.hide(800);
+    });
+    
+    // 포트폴리오 홈페이지 명시 팝업창 닫기 스크립트
+    
     var nav = $('.nav ul > li');
     
     nav.click(function(q){
@@ -8,6 +17,8 @@ $(document).ready(function(){
         
         navbtn.addClass('on').siblings().removeClass('on');
     });
+    
+    // 메뉴 탭 여닫기 스크립트
     
     var navclose = $('.nav .nav_close');
     var navopen = $('.nav .nav_close > a');
@@ -27,6 +38,8 @@ $(document).ready(function(){
         };
     });
     
+    // 메뉴 닫기 클릭시 옆으로 이동하는 스크립트
+    
     var swiper = new Swiper('.swiper-container', {
       // Optional parameters
       loop: true,
@@ -40,6 +53,8 @@ $(document).ready(function(){
         dynamicBullets: true,
       },
     });
+    
+    // swiper 슬라이드 스크립트
     
     var line= $('.line_news_right a');
     
@@ -55,11 +70,15 @@ $(document).ready(function(){
         };
     });
     
+    // 스타벅스 공지사항 페이지 열기
+    
     $('#favorite .favorite_close a').click(function(a){
         a.preventDefault();
         
         $('#favorite').fadeOut();
     });
+    
+    // 나만의 음료로 등록 되었습니다 창 닫기
     
     var questionbox = $('.coffee_find_left');
     
@@ -80,6 +99,8 @@ $(document).ready(function(){
             question.stop().animate({ top : '0' }, 2000);
         };
     });
+    
+    // 나와 어울리는 커피 찾기 스크립트
     
     var slidebox = $('.slide .movebox > div');
     var slideCount = slidebox.length;
@@ -120,6 +141,8 @@ $(document).ready(function(){
             };
         });
     
+    // 이달의 메뉴 추천 스크립트
+    
     $('.slider').bxSlider({
       auto: true,
       autoControls: true,
@@ -127,12 +150,16 @@ $(document).ready(function(){
       pager: true,
     });
     
+    // bxSlider 슬라이드 스크립트
+    
     var btn_top = $('#footer .top_btn');
     
     btn_top.click(function(s){
         s.preventDefault();
         $('html, body').animate({ scrollTop : 0 },500);
     });
+    
+    // 하단의 top 버튼 클릭시 맨 위로 이동되는 애니메이트
     
     var show = $('.coffee_find_left');
     var showOffset = $('.coffee_find_left').offset().top - 500;
@@ -150,8 +177,11 @@ $(document).ready(function(){
             store.addClass('on');
         };
     });
+    
+    // 매장 리스트 화면에 닿으면 이벤트 추가 스크립트
 });
 
 function favorite(){
         $('#favorite').fadeIn();
     };
+// 나만의 음료 등록시 팝업 스크립트
