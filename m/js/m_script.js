@@ -4,6 +4,8 @@ $(document).ready(function(){
     var popup_port = $('.portfolio_popup');
     
     popup_port_close.click(function(e){
+        e.preventDefault();
+        
         popup_port.hide(800);
     });
     
@@ -11,8 +13,8 @@ $(document).ready(function(){
     
     var nav = $('.nav ul > li');
     
-    nav.click(function(q){
-        q.preventDefault();
+    nav.click(function(e){
+        e.preventDefault();
         var navbtn = $(this);
         
         navbtn.addClass('on').siblings().removeClass('on');
@@ -24,8 +26,8 @@ $(document).ready(function(){
     var navopen = $('.nav .nav_close > a');
     var navi = $('.nav');
     
-    navclose.click(function(p){
-        p.preventDefault();
+    navclose.click(function(e){
+        e.preventDefault();
         
         if(navi.hasClass('on')){
             navi.removeClass('on');
@@ -58,8 +60,8 @@ $(document).ready(function(){
     
     var line= $('.line_news_right a');
     
-    line.click(function(a){
-        a.preventDefault();
+    line.click(function(e){
+        e.preventDefault();
         
         $('.line_news_right').toggleClass('on')
         
@@ -72,8 +74,8 @@ $(document).ready(function(){
     
     // 스타벅스 공지사항 페이지 열기
     
-    $('#favorite .favorite_close a').click(function(a){
-        a.preventDefault();
+    $('#favorite .favorite_close a').click(function(e){
+        e.preventDefault();
         
         $('#favorite').fadeOut();
     });
@@ -106,7 +108,7 @@ $(document).ready(function(){
     var slideCount = slidebox.length;
     var currentIndex = 0;
     
-    slidebox.each(function(o){
+    slidebox.each(function(){
         var slidelenght = $(this);
         var slideboxindx= slidelenght.index();
         //console.log(slideboxindx);
@@ -154,8 +156,8 @@ $(document).ready(function(){
     
     var btn_top = $('#footer .top_btn');
     
-    btn_top.click(function(s){
-        s.preventDefault();
+    btn_top.click(function(e){
+        e.preventDefault();
         $('html, body').animate({ scrollTop : 0 },500);
     });
     
