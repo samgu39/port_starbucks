@@ -288,8 +288,8 @@ a.bx-pager-link.active {background:#017143; width:40px; border-radius: 10px;}
 .best_product .best_product02 a {display: block; width: 408px; height: 564px; position: absolute; left:50%; top: 120px; transform: translateX(-50%);}
 
 /* 공지사항 */
-#main .main_middle .notice_box {margin: 20px auto;}
-#main .main_middle .notice_box .notice {display: inline-block; width: 580px; margin-right: 20px;}
+#main .main_middle .notice_box {margin: 20px auto; width: 100%;}
+#main .main_middle .notice_box .notice {display: inline-block; width: calc(100% - 580px);}
 #main .main_middle .notice_box .notice h4 {display: inline-block; position: relative; margin:40px 0 24px 0; font-family: 'Noto Sans KR', sans-serif; font-size: 1.2em; font-weight: bold; color: #017143; }
 #main .main_middle .notice_box .notice h4:before {content: ''; display: block; position: absolute; left:-5px; bottom:-5px; width: 5px; height: 30px; background: #bdd7cc; z-index: -1; transition: all .6s;}
 #main .main_middle .notice_box .notice h4:hover:before {width: 100px;}
@@ -304,9 +304,9 @@ a.bx-pager-link.active {background:#017143; width:40px; border-radius: 10px;}
 #main .main_middle .notice_box .notice .line_news_pagination ul li a {display: block; padding: 10px; color: #333; font-size: 0.9em;}
 
 /* 이벤트 01 & 02 */
-#main .main_middle .notice_box .event_left {display: inline-block; position: relative; width: 290px; height: 400px; vertical-align: top; }
+#main .main_middle .notice_box .event_left {display: inline-block; position: relative; width: calc(100% - 916px); height: 400px; vertical-align: top; }
 #main .main_middle .notice_box .event_left h4 {position: absolute; left:10px; top:20px; transform: rotate(-17deg); font-family: 'Noto Sans KR', sans-serif; font-size: 0.95em; font-weight: bold; color:#017143; z-index: 1;}
-#main .main_middle .notice_box .event_left h4 i {color:#0057da; font-size: 1.2em;}
+#main .main_middle .notice_box .event_left h4 i {display: inline-block; color:#0057da; font-size: 1.2em; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; width: 130px;}
 #main .main_middle .notice_box .event_left .event_left_slide {position: relative; width: 100%; height:100%; background: url(../img/slide/slide01_bg.png) no-repeat left 50% top; overflow: hidden;}
 #main .main_middle .notice_box .event_left .event_left_slide:before {content: ''; position: absolute; left:0; top:0; display: block; width: 100%; height: 100px; background: url(../img/slide/slide_bottom_left.png) no-repeat left top; background-size: 100%; z-index: 0;}
 #main .main_middle .notice_box .event_left .event_left_slide:after {content: ''; display: block; position: absolute; right: -50px; bottom: 0; width: 400px; height: 200px; background: url(../img/slide/slide01_water.png) no-repeat; background-size: 400px;}
@@ -321,7 +321,7 @@ a.bx-pager-link.active {background:#017143; width:40px; border-radius: 10px;}
 #main .main_middle .notice_box .event_left .event_left_slide .event_left03 a img {width: 100%; height: 100%;}
 #main .main_middle .notice_box .event_left .event_left_slide p {position: absolute; bottom:20px; left:50%; transform: translateX(-50%); white-space: nowrap; font-family: 'Noto Sans KR', sans-serif; font-weight: bold; color:#03396c; background: rgba(255,255,255,0.8); border-radius: 10px; padding: 10px; z-index: 2;}
 #main .main_middle .notice_box .event_left .event_left_slide p span {font-size: 0.9em; color: #ff0055; background: #ffd700; padding: 5px; border-radius: 10px;}
-#main .main_middle .notice_box .event_right {display: inline-block; width: 298px; height: 400px; vertical-align: top; position: relative; overflow: hidden;}
+#main .main_middle .notice_box .event_right {display: inline-block; width: calc(100% - 916px); height: 400px; vertical-align: top; position: relative; overflow: hidden;}
 #main .main_middle .notice_box .event_right h4 {position: absolute; left:10px; top:20px; transform: rotate(-17deg); font-family: 'Noto Sans KR', sans-serif; font-size: 0.95em; font-weight: bold; color:#017143; z-index: 2;}
 #main .main_middle .notice_box .event_right h4 i {display: inline-block; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; width: 130px; color: #ff7f50; font-size: 1.2em;}
 #main .main_middle .notice_box .event_right h4 i.event01 {color: #ff7f50;}
