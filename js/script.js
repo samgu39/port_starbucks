@@ -19,6 +19,8 @@ $(document).ready(function(){
     var popup_port = $('.portfolio_popup');
     
     popup_port_close.click(function(e){
+        e.preventDefault();
+        
         popup_port.hide(800);
     });
     
@@ -109,8 +111,8 @@ $(document).ready(function(){
     
     // swiper 슬라이드 코드
     
-    $('#favorite .favorite_close a').click(function(a){
-        a.preventDefault();
+    $('#favorite .favorite_close a').click(function(e){
+        e.preventDefault();
         
         $('#favorite').fadeOut();
     });
@@ -156,7 +158,7 @@ $(document).ready(function(){
     var slideCount01 = slidebox01.length;
     var currentIndex01 = 0;
     
-    slidebox01.each(function(o){
+    slidebox01.each(function(){
         var slidelenght01 = $(this);
         var slideboxindx01= slidelenght01.index();
         //console.log(slideboxindx);
@@ -197,7 +199,7 @@ $(document).ready(function(){
     var slideCount02 = slidebox02.length;
     var currentIndex02 = 0;
     
-    slidebox02.each(function(o){
+    slidebox02.each(function(){
         var slidelenght02 = $(this);
         var slideboxindx02= slidelenght02.index();
         //console.log(slideboxindx);
@@ -249,8 +251,8 @@ $(document).ready(function(){
     
     var btn_top = $('#footer .top_btn');
     
-    btn_top.click(function(s){
-        s.preventDefault();
+    btn_top.click(function(e){
+        e.preventDefault();
         $('html, body').animate({ scrollTop : 0 },500);
     });
     

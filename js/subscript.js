@@ -67,8 +67,8 @@ $(document).ready(function(){
     
     var line= $('.line_news_right a');
     
-    line.click(function(a){
-        a.preventDefault();
+    line.click(function(e){
+        e.preventDefault();
         
         $('.line_news_right').toggleClass('on')
         
@@ -83,8 +83,8 @@ $(document).ready(function(){
     
     var btn_top = $('#footer .top_btn');
     
-    btn_top.click(function(s){
-        s.preventDefault();
+    btn_top.click(function(e){
+        e.preventDefault();
         $('html, body').animate({ scrollTop : 0 },500);
     });
     
