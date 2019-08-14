@@ -15,6 +15,15 @@ $(document).ready(function(){
     
     // tab 버튼 클릭 시 skip 메뉴 활성화
     
+    var popup_port_close = $('.portfolio_popup .portfolio_popup_close a');
+    var popup_port = $('.portfolio_popup');
+    
+    popup_port_close.click(function(e){
+        popup_port.hide(800);
+    });
+    
+    // 포트폴리오 홈페이지 명시 팝업창 닫기 스크립트
+    
     var tmlabel = $('#header .top_menu ul li label');
     var tminput = $('#header .top_menu ul li .search');
     
