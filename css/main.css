@@ -163,7 +163,7 @@ h3 {font-family: 'Raleway', sans-serif;}
     to {left:5px;}
 }
 #main .main_middle .favorite_coffee .coffee a {display: block; width: 100%; height: 100%; position: absolute; left:0; top:0;}
-.favorite {display: none; position: fixed; left:50%; top:50%; transform: translate(-50%,-50%); width: 800px; height: 500px; background: url(../img/menu_bg.png) no-repeat; background-size: cover; border-radius: 3px; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); z-index: 9998; overflow: hidden;}
+.favorite {display: none; position: fixed; left:50%; top:50%; transform: translate(-50%,-50%); width: 800px; height: 500px; background: url(../img/menu_bg.jpg) no-repeat; background-size: cover; border-radius: 3px; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); z-index: 9998; overflow: hidden;}
 .favorite:before {content: ''; display: block; width: 100%; height: 100%; position: absolute; left:0; top:0; background: inherit; filter: blur(2px); z-index: -1;}
 .favorite:after {content: ''; display: block; width: 100%; height: 100%; position: absolute; left:0; top:0; background: rgba(0,0,0,0.6); z-index: -1;}
 .favorite .question:before {content: ''; display: block; width: 780px; height: 480px; position: fixed; left:8px; top:8px; border: 1px solid #ccc; z-index: -1;}
@@ -207,9 +207,9 @@ font-weight: bold; color: #017143;}
 #main .main_top .banner .main_slide {position: absolute; left:0; -ms-display: flex; display: flex; width: 100%; height: 100%;}
 #main .main_top .banner .main_slide div {position: absolute; left:0; top:0; width:100%; height: 100%;}
 #main .main_top .banner .main_slide div > .wrap {position: relative; width: 1200px; margin: 0 auto;}
-#main .main_top .banner .main_slide .slide01 {background:url(../img/slide/slide01_bg.png) center center; background-size:cover; overflow: hidden; }
-#main .main_top .banner .main_slide .slide02 {background:url(../img/slide/slide02_bg.png) center center; background-size:cover; overflow: hidden; }
-#main .main_top .banner .main_slide .slide03 {background:url(../img/slide/slide03_bg.png) center center; background-size:cover; overflow: hidden; }
+#main .main_top .banner .main_slide .slide01 {background:url(../img/slide/slide01_bg.jpg) center center; background-size:cover; overflow: hidden; }
+#main .main_top .banner .main_slide .slide02 {background:url(../img/slide/slide02_bg.jpg) center center; background-size:cover; overflow: hidden; }
+#main .main_top .banner .main_slide .slide03 {background:url(../img/slide/slide03_bg.jpg) center center; background-size:cover; overflow: hidden; }
 #main .main_top .banner .main_slide div h2 {display:inline-block; position: absolute; top: 25%; padding: 10px; letter-spacing: -1px; z-index: 2;}
 #main .main_top .banner .main_slide div em {display: block; position: absolute; top: 30%; left:40%; padding: 10px; z-index: 2;}
 #main .main_top .banner .main_slide .slide01 em {color:#2742a9;}
@@ -275,18 +275,6 @@ font-weight: bold; color: #017143;}
 .bx-pager-link {display: block; font-size:0; width:5px; height:5px; background:#ddd; border-radius: 50%; margin:5px; transition: all .6s;}
 a.bx-pager-link.active {background:#017143; width:40px; border-radius: 10px;}
 
-/* 베스트 신메뉴 */
-.best_product {position: relative; width: 100%; display: flex;}
-.best_product h3 {position: absolute; left:50%; transform: translateX(-50%); top:20px; color: #fff; font-size: 2em; font-weight: bold; text-align: center; padding: 20px; letter-spacing: -1px; z-index: 1;}
-.best_product em {display: block; position: absolute; left: 50%; top:100px; transform: translateX(-50%); color: #333; font-size: 1em; padding: 8px; background: #fff; border-radius: 2px; z-index: 1;}
-.best_product h3:before {content: ''; display: block; position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); width: 30px; height: 2px; background: #fff;}
-.best_product .best_product01 {position: relative; width: 50%; height: 600px; background: linear-gradient(#ff9494, #ffc7c7);}
-.best_product .best_product01:before {content: ''; display: block; width:100%; height: 251px; position: absolute; left:0; top:-251px; background: url(../img/slide/slide_bottom_left.png) no-repeat left; overflow: hidden;}
-.best_product .best_product01 a {display: block; width: 504px; height: 476px; position: absolute; left:50%; top: 120px; transform: translateX(-50%);}
-.best_product .best_product02 {position: relative; width: 50%; height: 600px; background: linear-gradient(#359245, #a5c151);}
-.best_product .best_product02:before {content: ''; display: block; width:100%; height: 251px; position: absolute; right:0; top:-251px; background: url(../img/slide/slide_bottom_right.png) no-repeat right; overflow: hidden;}
-.best_product .best_product02 a {display: block; width: 408px; height: 564px; position: absolute; left:50%; top: 120px; transform: translateX(-50%);}
-
 /* 공지사항 */
 #main .main_middle .notice_box {margin: 20px auto; width: 100%;}
 #main .main_middle .notice_box .notice {display: inline-block; width: calc(100% - 580px);}
@@ -307,7 +295,7 @@ a.bx-pager-link.active {background:#017143; width:40px; border-radius: 10px;}
 #main .main_middle .notice_box .event_left {display: inline-block; position: relative; width: calc(100% - 916px); height: 400px; vertical-align: top; }
 #main .main_middle .notice_box .event_left h4 {position: absolute; left:10px; top:20px; transform: rotate(-17deg); font-family: 'Noto Sans KR', sans-serif; font-size: 0.95em; font-weight: bold; color:#017143; z-index: 1;}
 #main .main_middle .notice_box .event_left h4 i {display: inline-block; color:#0057da; font-size: 1.2em; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; width: 130px;}
-#main .main_middle .notice_box .event_left .event_left_slide {position: relative; width: 100%; height:100%; background: url(../img/slide/slide01_bg.png) no-repeat left 50% top; overflow: hidden;}
+#main .main_middle .notice_box .event_left .event_left_slide {position: relative; width: 100%; height:100%; background: url(../img/slide/slide01_bg.jpg) no-repeat left 50% top; overflow: hidden;}
 #main .main_middle .notice_box .event_left .event_left_slide:before {content: ''; position: absolute; left:0; top:0; display: block; width: 100%; height: 100px; background: url(../img/slide/slide_bottom_left.png) no-repeat left top; background-size: 100%; z-index: 0;}
 #main .main_middle .notice_box .event_left .event_left_slide:after {content: ''; display: block; position: absolute; right: -50px; bottom: 0; width: 400px; height: 200px; background: url(../img/slide/slide01_water.png) no-repeat; background-size: 400px;}
 #main .main_middle .notice_box .event_left .event_left_slide .event_left01 {position: absolute; left:0; bottom:10px; width: 200px; height: 300px; margin-left: 16%;}
@@ -355,7 +343,7 @@ a.bx-pager-link.active {background:#017143; width:40px; border-radius: 10px;}
 
 /* 매장 찾기 */
 #main .main_bottom h3 {color: #017143; font-size: 2em; font-weight: bold; text-align: center; padding: 60px 0; letter-spacing: -1px;}
-#main .main_bottom .store_box {position: relative; width: 1200px; height: 800px; margin:0 auto; background: url(../img/storebg.png) no-repeat center center; background-size: cover; z-index: 0;}
+#main .main_bottom .store_box {position: relative; width: 1200px; height: 800px; margin:0 auto; background: url(../img/storebg.jpg) no-repeat center center; background-size: cover; z-index: 0;}
 #main .main_bottom .store_box:before {content: ''; position: absolute; left:0; top:0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); box-shadow: 0 0 12px rgba(0,0,0,0.3); z-index: -1;}
 #main .main_bottom .store_box > div {opacity: 0; position: absolute; z-index: 1; transition: all .6s;}
 #main .main_bottom .store_box > div:nth-child(1) {left:100px; top:600px; transition-delay: .3s; }
@@ -365,9 +353,9 @@ a.bx-pager-link.active {background:#017143; width:40px; border-radius: 10px;}
 #main .main_bottom .store_box > div a:before {content: ''; display: block; position: absolute; left:-5px; top:-5px; width: 100%; height: 100%; border-radius: 50%; border:5px solid #017143; background: #017143; transform: rotateY(0deg); transition: transform .6s; z-index: -1;}
 #main .main_bottom .store_box > div:hover a {transform: rotateY(360deg); color:#fff;}
 #main .main_bottom .store_box > div:hover a:before {transform: rotateY(360deg); border: 5px solid #017143; z-index: -1;}
-#main .main_bottom .store_box > div:nth-child(1):hover a:before {background: url(../img/store01.png); background-size: cover;}
-#main .main_bottom .store_box > div:nth-child(2):hover a:before {background: url(../img/store02.png); background-size: cover;}
-#main .main_bottom .store_box > div:nth-child(3):hover a:before {background: url(../img/store03.png); background-size: cover;}
+#main .main_bottom .store_box > div:nth-child(1):hover a:before {background: url(../img/store01.jpg); background-size: cover;}
+#main .main_bottom .store_box > div:nth-child(2):hover a:before {background: url(../img/store02.jpg); background-size: cover;}
+#main .main_bottom .store_box > div:nth-child(3):hover a:before {background: url(../img/store03.jpg); background-size: cover;}
 #main .main_bottom .store_box .store_offset {opacity: 0; position: absolute; top:-50px; width: 100%; height: 100%; background: url(../img/offset.png) no-repeat center center; z-index: 0; transition: all .6s; transition-delay: 1s;}
 
 #main .main_bottom .store_box.on div {opacity: 1;}
