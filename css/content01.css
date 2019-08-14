@@ -268,7 +268,7 @@ a.bx-pager-link.active {background:#017143; width:40px; border-radius: 10px;}
 .content .coffee01.on img, .content .coffee03.on img, .content .coffee05.on img, .content .coffee07.on img {left:0;}
 .content .coffee02 h3, .content .coffee04 h3, .content .coffee06 h3, .content .coffee08 h3 {position: absolute; right:470px; top:200px; font-family: 'Noto Sans KR', sans-serif; color:#017143; font-size: 1.6em; font-weight: bold; margin:10px 0; z-index: 1;}
 .content .coffee02 i, .content .coffee04 i, .content .coffee06 i, .content .coffee08 i {position: absolute; left:0; top:120px; font-family: 'Noto Sans KR', sans-serif; color:#fff; font-size: 1.4em; letter-spacing: -1px; margin:10px 0; display: block; z-index: 1; line-height: 1.4em;}
-.content .coffee02 p, .content .coffee04 p, .content .coffee06 p, .content .coffee08 p {position: absolute; left:0; top:260px; display: inline-block; font-family: 'Noto Sans KR', sans-serif; line-height: 1.5em; z-index: 1; color:#333;}
+.content .coffee02 p, .content .coffee04 p, .content .coffee06 p, .content .coffee08 p {position: absolute; right: 470px; top: 260px; display: inline-block; font-family: 'Noto Sans KR', sans-serif; line-height: 1.5em; z-index: 1; color:#333; text-align: right;}
 .content .coffee02 img, .content .coffee04 img, .content .coffee06 img, .content .coffee08 img {position: absolute; right:-40px; top:100px; display: inline-block; width: 450px; height: 272px; transition: all .6s;}
 .content .coffee02.on img, .content .coffee04.on img, .content .coffee06.on img, .content .coffee08.on img {right:0;}
 
