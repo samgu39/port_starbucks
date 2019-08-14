@@ -15,32 +15,32 @@ $(document).ready(function(){
     
     // tab 버튼 클릭 시 skip 메뉴 활성화
     
-    var popup_port_close = $('.portfolio_popup .portfolio_popup_close a');
-    var popup_port = $('.portfolio_popup');
+    var popupPortClose = $('.portfolio_popup .portfolio_popup_close a');
+    var popupPort = $('.portfolio_popup');
     
-    popup_port_close.click(function(e){
+    popupPortClose.click(function(e){
         e.preventDefault();
         
-        popup_port.hide(800);
+        popupPort.hide(800);
     });
     
     // 포트폴리오 홈페이지 명시 팝업창 닫기 스크립트
     
-    var tmlabel = $('#header .top_menu ul li label');
-    var tminput = $('#header .top_menu ul li .search');
+    var topMenuLabel = $('#header .top_menu ul li label');
+    var tmInput = $('#header .top_menu ul li .search');
     
-    tmlabel.click(function(){
-        if(tminput.hasClass('on')){ 
-            tminput.animate({top : - 100 + "px" , opacity : 0 }, 0);
-            tminput.removeClass('on');
+    topMenuLabel.click(function(){
+        if(tmInput.hasClass('on')){ 
+            tmInput.animate({top : - 100 + "px" , opacity : 0 }, 0);
+            tmInput.removeClass('on');
         }else{
-            tminput.css({
+            tmInput.css({
                 "display":"inline-block",
                 "position":"absolute",
                 "top": "0"
             });
-            tminput.animate({ top : 0 , opacity : 1 }, 0);
-            tminput.addClass('on');
+            tmInput.animate({ top : 0 , opacity : 1 }, 0);
+            tmInput.addClass('on');
         };
     });
     
@@ -65,35 +65,35 @@ $(document).ready(function(){
     var submenu = $('#header > .nav > div > ul > li > .submenu');
     
     menu.mouseover(function(){
-        var menuidx = $(this).index();
-        var subidx = submenu.eq(menuidx);
-        subidx.stop().slideDown();
-        subidx.css({"height":"auto"});
+        var menuIdx = $(this).index();
+        var subIdx = submenu.eq(menuIdx);
+        subIdx.stop().slideDown();
+        subIdx.css({"height":"auto"});
     });
     menu.mouseleave(function(){
-        var menuidx = $(this).index();
-        var subidx = submenu.eq(menuidx);
-        subidx.stop().slideUp();
+        var menuIdx = $(this).index();
+        var subIdx = submenu.eq(menuIdx);
+        subIdx.stop().slideUp();
     });
     
     menu.focusin(function(){
-        var menuidx = $(this).index();
-        var subidx = submenu.eq(menuidx);
-        subidx.stop().slideDown();
-        subidx.css({"height":"auto"});
+        var menuIdx = $(this).index();
+        var subIdx = submenu.eq(menuIdx);
+        subIdx.stop().slideDown();
+        subIdx.css({"height":"auto"});
     });
     menu.focusout(function(){
-        var menuidx = $(this).index();
-        var subidx = submenu.eq(menuidx);
-        subidx.stop().slideUp();
+        var menuIdx = $(this).index();
+        var subIdx = submenu.eq(menuIdx);
+        subIdx.stop().slideUp();
     });
     
     // 메인 메뉴 서브 메뉴 창 활성화
     
     var popup = $('#popup');
-    var popclose = $('#popup .close');
+    var popClose = $('#popup .close');
     
-    popclose.click(function(){
+    popClose.click(function(){
         popup.hide();
     });
     
@@ -120,9 +120,9 @@ $(document).ready(function(){
     // 나만의 음료 등록 창닫기
     
     var question = $('.favorite .question');
-    var question_answer = $('.favorite .question > div ul li a');
+    var questionAnswer = $('.favorite .question > div ul li a');
     
-    question_answer.click(function(e){
+    questionAnswer.click(function(e){
         e.preventDefault();
         
         //console.log(question.offset().top);
@@ -136,16 +136,16 @@ $(document).ready(function(){
     
     // 나와 어울리는 커피 슬라이드
     
-    var question_box = $('#main .main_middle .favorite_coffee .coffee a');
-    var question_btn = $('.close a');
+    var questionBox = $('#main .main_middle .favorite_coffee .coffee a');
+    var questionBtn = $('.close a');
     
-    question_box.click(function(e){
+    questionBox.click(function(e){
         e.preventDefault();
         
         $('.favorite').fadeIn();
     });
     
-    question_btn.click(function(e){
+    questionBtn.click(function(e){
         e.preventDefault();
         
         $('.favorite').fadeOut();
@@ -154,21 +154,21 @@ $(document).ready(function(){
     
     // 나와 어울리는 커피 창 닫기
     
-    var slidebox01 = $('.event_left_slide > div');
-    var slideCount01 = slidebox01.length;
+    var slideBox01 = $('.event_left_slide > div');
+    var slideCount01 = slideBox01.length;
     var currentIndex01 = 0;
     
-    slidebox01.each(function(){
-        var slidelenght01 = $(this);
-        var slideboxindx01= slidelenght01.index();
+    slideBox01.each(function(){
+        var slideLenght01 = $(this);
+        var slideBoxIndx01= slideLenght01.index();
         //console.log(slideboxindx);
-        var moveleft01 = slideboxindx01 * 100 + "%";
+        var moveLeft01 = slideBoxIndx01 * 100 + "%";
         
-        slidelenght01.css({ left : moveleft01 });
+        slideLenght01.css({ left : moveLeft01 });
     });
     
     $('.event_left .slide_prev').click(function(){
-            slidebox01.animate({ left : '+=100%' }, 300);
+            slideBox01.animate({ left : '+=100%' }, 300);
             currentIndex01 -= 1;
             //console.log(currentIndex01);
             
@@ -182,7 +182,7 @@ $(document).ready(function(){
         });
         
     $('.event_left .slide_next').click(function(){
-            slidebox01.animate({ left : '-=100%' }, 300);
+            slideBox01.animate({ left : '-=100%' }, 300);
             currentIndex01 += 1;
             //console.log(currentIndex01);
             
@@ -195,21 +195,21 @@ $(document).ready(function(){
     
     // 이벤트 01 슬라이드
     
-    var slidebox02 = $('.event_right_slide > div');
-    var slideCount02 = slidebox02.length;
+    var slideBox02 = $('.event_right_slide > div');
+    var slideCount02 = slideBox02.length;
     var currentIndex02 = 0;
     
-    slidebox02.each(function(){
-        var slidelenght02 = $(this);
-        var slideboxindx02= slidelenght02.index();
+    slideBox02.each(function(){
+        var slideLenght02 = $(this);
+        var slideBoxindx02= slideLenght02.index();
         //console.log(slideboxindx);
-        var moveleft02 = slideboxindx02 * 100 + "%";
+        var moveLeft02 = slideBoxindx02 * 100 + "%";
         
-        slidelenght02.css({ left : moveleft02 });
+        slideLenght02.css({ left : moveLeft02 });
     });
     
     $('.event_right .slide_prev').click(function(){
-            slidebox02.animate({ left : '+=100%' }, 300);
+            slideBox02.animate({ left : '+=100%' }, 300);
             currentIndex02 -= 1;
             //console.log(currentIndex);
             
@@ -225,7 +225,7 @@ $(document).ready(function(){
         });
         
     $('.event_right .slide_next').click(function(){
-            slidebox02.animate({ left : '-=100%' }, 300);
+            slideBox02.animate({ left : '-=100%' }, 300);
             currentIndex02 += 1;
             //console.log(currentIndex);
             
@@ -249,9 +249,9 @@ $(document).ready(function(){
     
     // boxslider 슬라이드 코드
     
-    var btn_top = $('#footer .top_btn');
+    var btnTop = $('#footer .top_btn');
     
-    btn_top.click(function(e){
+    btnTop.click(function(e){
         e.preventDefault();
         $('html, body').animate({ scrollTop : 0 },500);
     });

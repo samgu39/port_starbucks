@@ -1,21 +1,21 @@
 $(document).ready(function(){
 
-    var tmlabel = $('#header .top_menu ul li label');
-    var tminput = $('#header .top_menu ul li .search');
+    var tmLabel = $('#header .top_menu ul li label');
+    var tmInput = $('#header .top_menu ul li .search');
     
-    tmlabel.click(function(){
-        if(tminput.hasClass('on')){ 
-            tminput.animate({width : 0 , opacity : 0 }, 0);
-            tminput.removeClass('on');
+    tmLabel.click(function(){
+        if(tmInput.hasClass('on')){ 
+            tmInput.animate({width : 0 , opacity : 0 }, 0);
+            tmInput.removeClass('on');
         }else{
-            tminput.css({
+            tmInput.css({
                 "display":"inline-block",
                 "position":"absolute",
                 "top":"7px",
                 "right":"30px"
             });
-            tminput.animate({width : 150 , opacity : 1 }, 0);
-            tminput.addClass('on');
+            tmInput.animate({width : 150 , opacity : 1 }, 0);
+            tmInput.addClass('on');
         };
     });
     
@@ -40,27 +40,27 @@ $(document).ready(function(){
     var submenu = $('#header > .nav > div > ul > li > .submenu');
     
     menu.mouseover(function(){
-        var menuidx = $(this).index();
-        var subidx = submenu.eq(menuidx);
-        subidx.stop().slideDown();
-        subidx.css({"height":"auto"});
+        var menuIdx = $(this).index();
+        var subIdx = submenu.eq(menuIdx);
+        subIdx.stop().slideDown();
+        subIdx.css({"height":"auto"});
     });
     menu.mouseleave(function(){
-        var menuidx = $(this).index();
-        var subidx = submenu.eq(menuidx);
-        subidx.stop().slideUp();
+        var menuIdx = $(this).index();
+        var subIdx = submenu.eq(menuIdx);
+        subIdx.stop().slideUp();
     });
     
     menu.focusin(function(){
-        var menuidx = $(this).index();
-        var subidx = submenu.eq(menuidx);
-        subidx.stop().slideDown();
-        subidx.css({"height":"auto"});
+        var menuIdx = $(this).index();
+        var subIdx = submenu.eq(menuIdx);
+        subIdx.stop().slideDown();
+        subIdx.css({"height":"auto"});
     });
     menu.focusout(function(){
-        var menuidx = $(this).index();
-        var subidx = submenu.eq(menuidx);
-        subidx.stop().slideUp();
+        var menuIdx = $(this).index();
+        var subIdx = submenu.eq(menuIdx);
+        subIdx.stop().slideUp();
     });
       
     // 메인 메뉴 서브 메뉴 창 활성화
@@ -81,9 +81,9 @@ $(document).ready(function(){
     
     // 공지사항 창 활성화
     
-    var btn_top = $('#footer .top_btn');
+    var btnTop = $('#footer .top_btn');
     
-    btn_top.click(function(e){
+    btnTop.click(function(e){
         e.preventDefault();
         $('html, body').animate({ scrollTop : 0 },500);
     });
