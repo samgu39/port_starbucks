@@ -117,6 +117,7 @@ h3 {font-family: 'Raleway', sans-serif;}
 #header .nav div > ul > li > .submenu .foot_menu > div p {text-indent: 30px; color: #ddd; font-size: 0.85em;}
 
 /* 메인 부분 */
+#main .main_top h3 {width: 0; height: 0; font-size: 0;}
 #main .main_top .youtube_box {width: 100%; height: 800px; overflow: hidden; position: relative;}
 #main .main_top .youtube_box iframe {position: absolute; top: 50%; transform: translateY(-50%) scale(1.5,1.5); min-width:1200px; min-height: 1000px; width: 100%; height: 1000px;}
 #main .main_middle h3 { color: #017143; font-size: 2em; font-weight: bold; text-align: center; padding: 60px 0; letter-spacing: -1px;}
