@@ -18,6 +18,7 @@ blockquote, q {	quotes: none;}
 blockquote:before, blockquote:after,q:before, q:after {	content: '';content: none;}
 table {	border-collapse: collapse;	border-spacing: 0;}
 a {color:#000; font-style: normal; text-decoration: none;}
+br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif !important;}
 /* 리셋 css */
 
 /* 전체 css */
@@ -284,8 +285,8 @@ a.bx-pager-link.active {background:#017143; width:40px; border-radius: 10px;}
 #main .main_middle .notice_box .notice .line_news_notice {position: relative; width: 100%; color: #333;}
 #main .main_middle .notice_box .notice .line_news_notice:before {content: ''; position: absolute; right:6px; top:-66px; width: 80px; height: 70px; background: url(../img/notice_top_bg.png) no-repeat; background-size: 50%;}
 #main .main_middle .notice_box .notice .line_news_notice thead td {font-family: 'Noto Sans KR', sans-serif; text-align: center; font-weight: bold; font-size: 0.9em; padding: 10px 0; border-bottom: 1px solid #017143; background: #bdd7cc; color: #017143;}
-#main .main_middle .notice_box .notice .line_news_notice tbody td {text-align: center; padding: 10px 0; font-size: 0.9em;}
-#main .main_middle .notice_box .notice .line_news_notice tbody td a {display: block; text-align: left; color:#333; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.9em; margin-left: 20px;}
+#main .main_middle .notice_box .notice .line_news_notice tbody td {text-align: center; padding: 5px 0; font-size: 0.9em;}
+#main .main_middle .notice_box .notice .line_news_notice tbody td a {display: block; text-align: left; color:#333; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.9em; margin-left: 20px; padding: 5px 0;}
 #main .main_middle .notice_box .notice .line_news_notice tbody td a:hover {text-decoration: underline;}
 #main .main_middle .notice_box .notice .line_news_pagination ul {-ms-display: flex; display: flex; text-align: center; justify-content: center; margin-top: 10px;}
 #main .main_middle .notice_box .notice .line_news_pagination ul li.on a {font-weight: bold; color: #017143; text-decoration: underline;}
@@ -294,7 +295,7 @@ a.bx-pager-link.active {background:#017143; width:40px; border-radius: 10px;}
 /* 이벤트 01 & 02 */
 #main .main_middle .notice_box .event_left {display: inline-block; position: relative; width: calc(100% - 916px); height: 400px; vertical-align: top; }
 #main .main_middle .notice_box .event_left h4 {position: absolute; left:10px; top:20px; transform: rotate(-17deg); font-family: 'Noto Sans KR', sans-serif; font-size: 0.95em; font-weight: bold; color:#017143; z-index: 1;}
-#main .main_middle .notice_box .event_left h4 i {display: inline-block; color:#0057da; font-size: 1.2em; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; width: 130px;}
+#main .main_middle .notice_box .event_left h4 i {color:#0057da; font-size: 1.2em; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; width: 130px;}
 #main .main_middle .notice_box .event_left .event_left_slide {position: relative; width: 100%; height:100%; background: url(../img/slide/slide01_bg.jpg) no-repeat left 50% top; overflow: hidden;}
 #main .main_middle .notice_box .event_left .event_left_slide:before {content: ''; position: absolute; left:0; top:0; display: block; width: 100%; height: 100px; background: url(../img/slide/slide_bottom_left.png) no-repeat left top; background-size: 100%; z-index: 0;}
 #main .main_middle .notice_box .event_left .event_left_slide:after {content: ''; display: block; position: absolute; right: -50px; bottom: 0; width: 400px; height: 200px; background: url(../img/slide/slide01_water.png) no-repeat; background-size: 400px;}
