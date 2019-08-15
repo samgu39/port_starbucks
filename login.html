@@ -375,7 +375,7 @@
             <div class="cont_footer wrap">
                 <p>
                     * 타 사이트와 비밀번호를 동일하게 사용할 경우 도용의 위험이 있으므로, 정기적인 비밀번호 변경을 해주시길 바랍니다.<br/>
-                    * 해당 사이트는 포트폴리오용 홈페이지로, Internet Explorer 11 이상, Chrome, Firefox, Safari 브라우저에 최적화 되어있습니다.
+                    * 해당 사이트는 포트폴리오용 홈페이지로, Internet Explorer 10 이상, Chrome, Firefox, Safari 브라우저에 최적화 되어있습니다.
                 </p>
             </div>
         </div>
@@ -462,24 +462,24 @@
     </footer>
     
     <script>
-    var login_btn = $('.login_btn');    
+    var loginBox = $('.login_btn');    
     
-    login_btn.click(function(e){
+    loginBox.click(function(e){
         e.preventDefault();
         
         $('.login_box').each(function(){
-            var login_val = $(this).val();
+            var loginVal = $(this).val();
             
-            if(!login_val){
+            if(!loginVal){
             $(this).addClass('error');
             $(this).next('.error_text').css({"display":"block"});
-            login_btn.addClass('no');
-            login_btn.prop("disabled",true).text('로그인 정보를 입력해주세요.');
+            loginBox.addClass('no');
+            loginBox.prop("disabled",true).text('로그인 정보를 입력해주세요.');
         }else {
             $(this).removeClass('error');
             $(this).next('.error_text').css({"display":"none"});
-            login_btn.removeClass('no');
-            login_btn.prop("disabled",false).text('로그인');
+            loginBox.removeClass('no');
+            loginBox.prop("disabled",false).text('로그인');
         }
         });
         
@@ -488,18 +488,18 @@
     
     $('.login_box').focusout(function(){
         $('.login_box').each(function(){
-            var login_val = $(this).val();
+            var loginVal = $(this).val();
             
-            if(!login_val){
+            if(!loginVal){
             $(this).addClass('error');
             $(this).next('.error_text').css({"display":"block"});
-            login_btn.addClass('no');
-            login_btn.prop("disabled",true).text('로그인 정보를 입력해주세요.');
+            loginBox.addClass('no');
+            loginBox.prop("disabled",true).text('로그인 정보를 입력해주세요.');
         }else {
             $(this).removeClass('error');
             $(this).next('.error_text').css({"display":"none"});
-            login_btn.removeClass('no');
-            login_btn.prop("disabled",false).text('로그인');
+            loginBox.removeClass('no');
+            loginBox.prop("disabled",false).text('로그인');
         }
         });
     });    
