@@ -1,20 +1,19 @@
 $(document).ready(function(){
 
-    var tmLabel = $('#header .top_menu ul li label');
+    var topMenuLabel = $('#header .top_menu ul li label');
     var tmInput = $('#header .top_menu ul li .search');
     
-    tmLabel.click(function(){
+    topMenuLabel.click(function(){
         if(tmInput.hasClass('on')){ 
-            tmInput.animate({width : 0 , opacity : 0 }, 0);
+            tmInput.animate({top : - 100 + "px" , opacity : 0 }, 0);
             tmInput.removeClass('on');
         }else{
             tmInput.css({
                 "display":"inline-block",
                 "position":"absolute",
-                "top":"7px",
-                "right":"30px"
+                "top": "0"
             });
-            tmInput.animate({width : 150 , opacity : 1 }, 0);
+            tmInput.animate({ top : 0 , opacity : 1 }, 0);
             tmInput.addClass('on');
         };
     });
