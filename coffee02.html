@@ -584,81 +584,89 @@
     
     var btn01 = $('.content .ytb_coffee01 a');
     var ytb01 = $('.content .ytb_coffee01 .ytb');
-    var embed = $('#player');
     
-    btn01.click(function(b){
-        b.preventDefault();
-        var clickbtn = $(this);
+    btn01.click(function(e){
+        e.preventDefault();
+        var clickBtn = $(this);
+        var ytb01Link = $('.content .ytb_coffee01 .ytb iframe').attr('src');
+        var auto = '?autoplay=1';
+        var autoPlay = ytb01Link.concat(auto);
         
         ytb01.addClass('on');
         ytb01.show();
-        $('.content .ytb_coffee01 .ytb iframe').attr('src', 'https://www.youtube.com/embed/qNIngFRL-Z0');
+        $('.content .ytb_coffee01 .ytb iframe').attr('src',autoPlay);
     });
     
     $('.content .ytb_coffee01 .ytb .close').click(function(){
         ytb01.removeClass('on');
         ytb01.hide();
-        $('.content .ytb_coffee01 .ytb iframe').attr('src', '');
+        $('.content .ytb_coffee01 .ytb iframe').attr('src',ytb01Link);
 
     });
         
     var btn02 = $('.content .ytb_coffee02 a');
     var ytb02 = $('.content .ytb_coffee02 .ytb');
-    var embed = $('#player');
     
-    btn02.click(function(b){
-        b.preventDefault();
-        var clickbtn = $(this);
+    btn02.click(function(e){
+        e.preventDefault();
+        var clickBtn = $(this);
+        var ytb02Link = $('.content .ytb_coffee02 .ytb iframe').attr('src');
+        var auto = '?autoplay=1';
+        var autoPlay = ytb02Link.concat(auto);
         
         ytb02.addClass('on');
         ytb02.show();
-        $('.content .ytb_coffee02 .ytb iframe').attr('src', 'https://www.youtube.com/embed/Y6_X0UoEsBQ');
+        $('.content .ytb_coffee02 .ytb iframe').attr('src',autoPlay);
     });
     
     $('.content .ytb_coffee02 .ytb .close').click(function(){
         ytb02.removeClass('on');
         ytb02.hide();
-        $('.content .ytb_coffee02 .ytb iframe').attr('src', '');
+        $('.content .ytb_coffee02 .ytb iframe').attr('src', ytb02Link);
 
     });
         
     var btn03 = $('.content .ytb_coffee03 a');
     var ytb03 = $('.content .ytb_coffee03 .ytb');
-    var embed = $('#player');
     
-    btn03.click(function(b){
-        b.preventDefault();
-        var clickbtn = $(this);
+    btn03.click(function(e){
+        e.preventDefault();
+        var clickBtn = $(this);
+        var ytb03Link = $('.content .ytb_coffee03 .ytb iframe').attr('src');
+        var auto = '?autoplay=1';
+        var autoPlay = ytb03Link.concat(auto);
         
         ytb03.addClass('on');
         ytb03.show();
-        $('.content .ytb_coffee03 .ytb iframe').attr('src', 'https://www.youtube.com/embed/0fj5LeX4WqE');
+        $('.content .ytb_coffee03 .ytb iframe').attr('src', autoPlay);
     });
     
     $('.content .ytb_coffee03 .ytb .close').click(function(){
         ytb03.removeClass('on');
         ytb03.hide();
-        $('.content .ytb_coffee03 .ytb iframe').attr('src', '');
+        $('.content .ytb_coffee03 .ytb iframe').attr('src', ytb03Link);
 
     });
         
     var btn04 = $('.content .ytb_coffee04 a');
     var ytb04 = $('.content .ytb_coffee04 .ytb');
-    var embed = $('#player');
     
-    btn04.click(function(b){
-        b.preventDefault();
-        var clickbtn = $(this);
+    btn04.click(function(e){
+        e.preventDefault();
+        var clickBtn = $(this);
+        var ytb04Link = $('.content .ytb_coffee04 .ytb iframe').attr('src');
+        var auto = '?autoplay=1';
+        var autoPlay = ytb04Link.concat(auto);
         
         ytb04.addClass('on');
         ytb04.show();
-        $('.content .ytb_coffee04 .ytb iframe').attr('src', 'https://www.youtube.com/embed/mT2ZJnLyjXg');
+        $('.content .ytb_coffee04 .ytb iframe').attr('src', autoPlay);
     });
     
     $('.content .ytb_coffee04 .ytb .close').click(function(){
         ytb04.removeClass('on');
         ytb04.hide();
-        $('.content .ytb_coffee04 .ytb iframe').attr('src', '');
+        $('.content .ytb_coffee04 .ytb iframe').attr('src', ytb04Link);
 
     });
     </script>

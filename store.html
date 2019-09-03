@@ -611,26 +611,26 @@
         </div>
     </footer>
     <script>
-    var ytb_btn = $('.store .store_center .sub01 .ytb_btn');
+    var ytbBtn = $('.store .store_center .sub01 .ytb_btn');
     var ytb = $('.youtube .ytb');
-    var embed = $('#player');
+    var ytbIframe = $('.youtube .ytb iframe').attr('src');
+    var auto = '?autoplay=1';
+    var autoPlay = ytbIframe.concat(auto);
     
-    ytb_btn.click(function(m){
-        m.preventDefault();
+    ytbBtn.click(function(e){
+        e.preventDefault();
         
         ytb.addClass('on');
         $('.youtube .close').addClass('on');
-        ytb.show();
-        ytb.append(embed);
+        $('.youtube .ytb iframe').attr('src',autoPlay);
     });
         
-    var ytb_close = $('.youtube .close');
+    var ytbClose = $('.youtube .close');
     
-    ytb_close.click(function(){
+    ytbClose.click(function(){
         ytb.removeClass('on');
         $('.youtube .close').removeClass('on');
-        ytb.hide();
-        ytb.empty();
+        $('.youtube .ytb iframe').attr('src',ytbIframe);
     });
         
     var menu01 = $('.store_center > div > .menu01');
