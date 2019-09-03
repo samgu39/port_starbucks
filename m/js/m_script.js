@@ -105,8 +105,8 @@ $(document).ready(function(){
     
     // 나와 어울리는 커피 찾기 스크립트
     
-    var slideBox = $('.slide .movebox > div');
-    var slideCount = slidebox.length;
+    var slideBox = $('.movebox > div');
+    var slideCount = slideBox.length;
     var currentIndex = 0;
     
     slideBox.each(function(){
@@ -115,7 +115,7 @@ $(document).ready(function(){
         //console.log(slideBoxIndx);
         var moveLeft = slideBoxIndx * 100 + "%";
         
-        slideLenght.css({ left : moveleft });
+        slideLenght.css({ left : moveLeft });
     });
     
     $('.slide_prev').click(function(){
@@ -124,10 +124,8 @@ $(document).ready(function(){
             //console.log(currentIndex);
             
             if(currentIndex == 0){
-            //$('.slide_prev').css("display","none");
             $('.slide_prev').addClass('off');
             }else{
-                //$('.slide_prev').css("display","block");
                 $('.slide_next').removeClass('off');
             };
         });
