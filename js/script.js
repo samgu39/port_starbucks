@@ -127,7 +127,7 @@ $(document).ready(function(){
         
         //console.log(question.offset().top);
         
-        if (question.offset().top > 1400 ) {
+        if (question.offset().top > 1200 ) {
              question.animate({ top : '-=100%' }, 2000);
         }else {
             question.stop().animate({ top : '0' }, 2000);
